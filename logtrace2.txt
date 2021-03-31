@@ -1,0 +1,492 @@
+== Info:   Trying 104.27.135.11...
+== Info: TCP_NODELAY set
+== Info: Connected to reqres.in (104.27.135.11) port 443 (#0)
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 174 bytes...
+== Info: schannel: sent initial handshake data: sent 174 bytes
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 1260
+== Info: schannel: encrypted data buffer: offset 1260 length 4096
+== Info: schannel: encrypted data length: 1188
+== Info: schannel: encrypted data buffer: offset 1188 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 1153
+== Info: schannel: encrypted data buffer: offset 2341 length 4096
+== Info: schannel: sending next handshake data: sending 93 bytes...
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 258
+== Info: schannel: encrypted data buffer: offset 258 length 4096
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 73 bytes (0x49)
+0000: GET / HTTP/1.1
+0010: Host: reqres.in
+0021: User-Agent: curl/7.55.1
+003a: Accept: */*
+0047: 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 1398
+== Info: schannel: encrypted data buffer: offset 1398 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 1369 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 1369
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Tue, 13 Oct 2020 15:08:31 GMT
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=utf-8
+<= Recv header, 28 bytes (0x1c)
+0000: Transfer-Encoding: chunked
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 162 bytes (0xa2)
+0000: Set-Cookie: __cfduid=d82685027bcf62f596d07e73e4b58cb5b1602601711
+0040: ; expires=Thu, 12-Nov-20 15:08:31 GMT; path=/; domain=.reqres.in
+0080: ; HttpOnly; SameSite=Lax; Secure
+<= Recv header, 23 bytes (0x17)
+0000: X-Powered-By: Express
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 16 bytes (0x10)
+0000: Via: 1.1 vegur
+<= Recv header, 30 bytes (0x1e)
+0000: Cache-Control: max-age=14400
+<= Recv header, 22 bytes (0x16)
+0000: CF-Cache-Status: HIT
+<= Recv header, 11 bytes (0xb)
+0000: Age: 7036
+<= Recv header, 22 bytes (0x16)
+0000: Accept-Ranges: bytes
+<= Recv header, 49 bytes (0x31)
+0000: cf-request-id: 05c41a8f5e0000075a76181200000001
+<= Recv header, 100 bytes (0x64)
+0000: Expect-CT: max-age=604800, report-uri="https://report-uri.cloudf
+0040: lare.com/cdn-cgi/beacon/expect-ct"
+<= Recv header, 143 bytes (0x8f)
+0000: Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\
+0040: /report?lkg-colo=21&lkg-time=1602601711"}],"group":"cf-nel","max
+0080: _age":604800}
+<= Recv header, 46 bytes (0x2e)
+0000: NEL: {"report_to":"cf-nel","max_age":604800}
+<= Recv header, 20 bytes (0x14)
+0000: Server: cloudflare
+<= Recv header, 30 bytes (0x1e)
+0000: CF-RAY: 5e19f9f89ba5075a-LHR
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 515 bytes (0x203)
+0000: 4a27
+0006: <!DOCTYPE html>.<html lang="en">.  <head>.    <!-- Google Tag Ma
+0046: nager -->.    <script>.      (function(w, d, s, l, i) {.        
+0086: w[l] = w[l] || [];.        w[l].push({ "gtm.start": new Date().g
+00c6: etTime(), event: "gtm.js" });.        var f = d.getElementsByTag
+0106: Name(s)[0],.          j = d.createElement(s),.          dl = l !
+0146: = "dataLayer" ? "&l=" + l : "";.        j.async = true;.        
+0186: j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;.
+01c6:         f.parentNode.insertBefore(j, f);.      })(window, doc
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 1398
+== Info: schannel: encrypted data buffer: offset 1398 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 1369 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 1369
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv data, 1369 bytes (0x559)
+0000: ument, "script", "dataLayer", "GTM-KB622KF");.    </script>.    
+0040: <!-- End Google Tag Manager -->.    <meta charset="utf-8" />.   
+0080:  <meta.      name="viewport".      content="width=device-width, 
+00c0: initial-scale=1.0, maximum-scale=1.0".    />.    <meta.      nam
+0100: e="description".      content="A hosted REST-API ready to respon
+0140: d to your AJAX requests".    />.    <title>.      Reqres - A hos
+0180: ted REST-API ready to respond to your AJAX requests.    </title>
+01c0: .    <link.      href="//maxcdn.bootstrapcdn.com/font-awesome/4.
+0200: 2.0/css/font-awesome.min.css".      rel="stylesheet".    />..   
+0240:  <link rel="stylesheet" href="/css/app.css" />.  </head>.  <body
+0280: >.    <div class="header-content">.      <header class="main-hea
+02c0: der">.        <section class="wrap">.          <h1 class="logo">
+0300: <a href="/">Req&#8201;|&#8201;Res</a></h1>.        </section>.  
+0340:     </header>.      <main class="the-sell">.        <div class="
+0380: wrap">.          <h2 class="tagline">Test your front-end against
+03c0:  a real API</h2>.          <section class="key-sells">.         
+0400:    <div class="sell">.              <div class="v-center">.     
+0440:            <h3>Fake data</h3>.                <p>.              
+0480:     No more tedious sample data creation, we've got it covered..
+04c0:                 </p>.              </div>.              <i class
+0500: ="fa fa-cloud-download"></i>.            </div>.            <div
+0540:  class="sell">.          
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 6852
+== Info: schannel: encrypted data buffer: offset 6852 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data length: 5454
+== Info: schannel: encrypted data cached: offset 5454 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 2738 length 102400
+== Info: schannel: encrypted data length: 4056
+== Info: schannel: encrypted data cached: offset 4056 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 4107 length 102400
+== Info: schannel: encrypted data length: 2658
+== Info: schannel: encrypted data cached: offset 2658 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 5476 length 102400
+== Info: schannel: encrypted data length: 1260
+== Info: schannel: encrypted data cached: offset 1260 length 103424
+== Info: schannel: failed to decrypt data, need more data
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 5476
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv data, 5476 bytes (0x1564)
+0000:     <div class="v-center">.                <h3>Real responses</h
+0040: 3>.                <p>.                  Develop with real respo
+0080: nse codes. GET, POST, PUT &amp; DELETE.                  support
+00c0: ed..                </p>.              </div>.              <i c
+0100: lass="fa fa-code"></i>.            </div>.            <div class
+0140: ="sell">.              <div class="v-center">.                <h
+0180: 3>Always-on</h3>.                <p>.                  24/7 <str
+01c0: ong><em>free</em></strong> access in your development.          
+0200:         phases. Go nuts..                </p>.              </di
+0240: v>.              <i class="fa fa-toggle-on"></i>.            </d
+0280: iv>.          </section>.          <h2 class="tagline">.        
+02c0:     A hosted REST-API ready to respond to your AJAX requests..  
+0300:         </h2>.          <div class="t-center main-arrow">.      
+0340:       <i class="fa fa-arrow-circle-down"></i>.          </div>. 
+0380:          <script async type="text/javascript" src="//cdn.carbona
+03c0: ds.com/carbon.js?serve=CE7D6K3E&placement=reqresin" id="_carbona
+0400: ds_js"></script>.        </div>.      </main>.    </div>.    <di
+0440: v class="container">.      <div class="home-content">.  <div cla
+0480: ss="wrap">.    <h2 class="t-center heading">Give it a try</h2>. 
+04c0:    <hr class="dark" />.    <section class="console try-api-links
+0500: " id="console">.      <div class="endpoints" data-key="endpoints
+0540: ">.        <ul>.          <li.            data-id="users".      
+0580:       data-key="endpoint".            data-http="get".          
+05c0:   class="active".          >.            <a.              data-k
+0600: ey="try-link".            >.              List users.           
+0640:  </a>.          </li>.          <li.            data-id="users-s
+0680: ingle".            data-key="endpoint".            data-http="ge
+06c0: t".          >.            <a.              data-key="try-link".
+0700:             >.              Single user.            </a>.       
+0740:    </li>.          <li.            data-id="users-single-not-fou
+0780: nd".            data-key="endpoint".            data-http="get".
+07c0:           >.            <a.              data-key="try-link".   
+0800:          >.              Single user not found.            </a>.
+0840:           </li>.          <li.            data-id="unknown".    
+0880:         data-key="endpoint".            data-http="get".        
+08c0:   >.            <a.              data-key="try-link".           
+0900:  >.              List &lt;resource&gt;.            </a>.        
+0940:   </li>.          <li.            data-id="unknown-single".     
+0980:        data-key="endpoint".            data-http="get".         
+09c0:  >.            <a.              data-key="try-link".            
+0a00: >.              Single &lt;resource&gt;.            </a>.       
+0a40:    </li>.          <li.            data-id="unknown-single-not-f
+0a80: ound".            data-key="endpoint".            data-http="get
+0ac0: ".          >.            <a.              data-key="try-link". 
+0b00:            >.              Single &lt;resource&gt; not found.   
+0b40:          </a>.          </li>.          <li.            data-id=
+0b80: "post".            data-key="endpoint".            data-http="po
+0bc0: st".          >.            <a.              data-key="try-link"
+0c00: .            >.              Create.            </a>.          <
+0c40: /li>.          <li.            data-id="put".            data-ke
+0c80: y="endpoint".            data-http="put".          >.           
+0cc0:  <a.              data-key="try-link".            >.            
+0d00:   Update.            </a>.          </li>.          <li.        
+0d40:     data-id="patch".            data-key="endpoint".            
+0d80: data-http="patch".          >.            <a.              data-
+0dc0: key="try-link".            >.              Update.            </
+0e00: a>.          </li>.          <li.            data-id="delete".  
+0e40:           data-key="endpoint".            data-http="delete".   
+0e80:        >.            <a.              data-key="try-link".      
+0ec0:       >.              Delete.            </a>.          </li>.  
+0f00:         <li.            data-id="register-successful".          
+0f40:   data-key="endpoint".            data-http="post".          >. 
+0f80:            <a.              data-key="try-link".            >.  
+0fc0:             Register - successful.            </a>.          </l
+1000: i>.          <li.            data-id="register-unsuccessful".   
+1040:          data-key="endpoint".            data-http="post".      
+1080:     >.          <a.            data-key="try-link".          >. 
+10c0:            Register - unsuccessful.          </a>.          </li
+1100: >.          <li.            data-id="login-successful".         
+1140:    data-key="endpoint".            data-http="post".          >.
+1180:             <a.              data-key="try-link".            >. 
+11c0:              Login - successful.            </a>.          </li>
+1200: .          <li data-id="login-unsuccessful" data-key="endpoint" 
+1240: data-http="post">.            <a.              data-key="try-lin
+1280: k".            >.              Login - unsuccessful.            
+12c0: </a>.          </li>.          <li.            data-id="delay". 
+1300:            data-key="endpoint".            data-http="get".     
+1340:      >.            <a.              data-key="try-link".        
+1380:     >.              Delayed response.            </a>.          
+13c0: </li>.        </ul>.      </div>.      <!--....-->.      <div cl
+1400: ass="output">.        <div class="request">.          <p class="
+1440: request-title">.            <strong.              >Request <i cl
+1480: ass="fa fa-arrow-circle-up"></i>.              <a.              
+14c0:   class="link try-link".                data-key="request-output
+1500: -link".              >.                <span class="url" data-ke
+1540: y="url"></span>.              </a>. 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 1260 length 103424
+== Info: schannel: encrypted data got 10666
+== Info: schannel: encrypted data buffer: offset 11926 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data length: 10528
+== Info: schannel: encrypted data cached: offset 10528 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 2738 length 102400
+== Info: schannel: encrypted data length: 9130
+== Info: schannel: encrypted data cached: offset 9130 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 4107 length 102400
+== Info: schannel: encrypted data length: 7732
+== Info: schannel: encrypted data cached: offset 7732 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 5476 length 102400
+== Info: schannel: encrypted data length: 6334
+== Info: schannel: encrypted data cached: offset 6334 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 6845 length 102400
+== Info: schannel: encrypted data length: 4936
+== Info: schannel: encrypted data cached: offset 4936 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 8214 length 102400
+== Info: schannel: encrypted data length: 3538
+== Info: schannel: encrypted data cached: offset 3538 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 9583 length 102400
+== Info: schannel: encrypted data length: 2140
+== Info: schannel: encrypted data cached: offset 2140 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 10952 length 102400
+== Info: schannel: encrypted data length: 742
+== Info: schannel: encrypted data cached: offset 742 length 103424
+== Info: schannel: decrypted data length: 679
+== Info: schannel: decrypted data added: 679
+== Info: schannel: decrypted data cached: offset 11631 length 102400
+== Info: schannel: encrypted data length: 34
+== Info: schannel: encrypted data cached: offset 34 length 103424
+== Info: schannel: decrypted data length: 5
+== Info: schannel: decrypted data added: 5
+== Info: schannel: decrypted data cached: offset 11636 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 11636 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 11636
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv data, 11636 bytes (0x2d74)
+0000:            </strong>.          </p>.          <pre data-key="out
+0040: put-request"></pre>.        </div>.        <!--.....-->.        
+0080: <div class="response">.          <p class="response-title">.    
+00c0:         <strong.              >Response <i class="fa fa-arrow-ci
+0100: rcle-down"></i>.              <span class="response-code" data-k
+0140: ey="response-code"></span.            ></strong>.          </p>.
+0180:           <div data-key="spinner" class="spinner" hidden>.      
+01c0:       <div class="cube1"></div>.            <div class="cube2"><
+0200: /div>.          </div>.          <pre data-key="output-response"
+0240: ></pre>.        </div>.      </div>.    </section>..    <h2 clas
+0280: s="t-center heading">It&rsquo;s all in the details</h2>.    <hr 
+02c0: class="dark" />.    <section class="technical-bits" id="technica
+0300: l-bits">.      <ul class="iconed">.        <li>.          <i cla
+0340: ss="fa fa-cloud"></i>.          <p>.            <strong.        
+0380:       >Hosted on <a href="https://www.heroku.com/">Heroku</a></s
+03c0: trong.            >.          </p>.          <p>.            Whi
+0400: ch means 99.99% Uptime SLA.<br />All you need is the base URL,. 
+0440:            and you're away: <br /><br /><span class="code".     
+0480:          >https://reqres.in/api/</span.            ><br /><br />
+04c0: The API is CORS enabled, so you can make requests right.        
+0500:     from the browser, no matter what domain, or even from somewh
+0540: ere like.            JSFiddle or JSBin..          </p>.        <
+0580: /li>.        <li>.          <i class="fa fa-file-code-o"></i>.  
+05c0:         <p><strong>Language agnostic</strong></p>.          <p>.
+0600:             A generic API that conforms to REST principles and a
+0640: ccepts a content.            type of <br /><br /><span class="co
+0680: de">application/json</span.            ><br /><br />Any endpoint
+06c0:  that contains "&lt;resource&gt;" can be.            substituted
+0700:  with anything you supply, ie. "products", "accounts",.         
+0740:    etc..the API will just respond with various Pantone colours..
+0780:           </p>.        </li>.      </ul>.    </section>..    <h2
+07c0:  class="t-center heading">Getting started</h2>.    <hr class="da
+0800: rk" />.    <section class="getting-started t-center" id="getting
+0840: -started">.      <i class="fa fa-html5"></i>.      <div class="t
+0880: ab">.        <p class="tab-title">jQuery</p>.        <p>If you, 
+08c0: for example, want to create a fake user:</p>.        <pre>$.ajax
+0900: ({.    url: "https://reqres.in/api/users",.    type: "POST",.   
+0940:  data: {.        name: "paul rudd",.        movies: ["I Love You
+0980:  Man", "Role Models"].    },.    success: function(response){.  
+09c0:       console.log(response);.    }.});.....</pre.        >.     
+0a00:    <p>For which the response to this request will be...</p>.    
+0a40:     <pre>{.    "name":"paul rudd",.    "movies[]":[.        "I L
+0a80: ove You Man",.        "Role Models".    ],.    "id":"243",.    "
+0ac0: createdAt":"2014-10-18T12:09:05.255Z".}.....</pre.        >.    
+0b00:     <p>.          You can see that the API has sent us back what
+0b40: ever user details we.          sent it, plus an <span class="cod
+0b80: e">id</span> &amp;.          <span class="code">createdAt</span>
+0bc0:  key for our use..        </p>.      </div>.      <!--....-->.  
+0c00:     <div class="tab">.        <p class="tab-title">Native JavaSc
+0c40: ript</p>.        <p>.          If you've already got your own ap
+0c80: plication entities, ie. "products",.          you can send them 
+0cc0: in the endpoint URL, like so:.        </p>.        <pre>var xhr 
+0d00: = new XMLHttpRequest();.xhr.open("GET", "https://reqres.in/api/p
+0d40: roducts/3", true);.xhr.onload = function(){.    console.log(xhr.
+0d80: responseText);.};.xhr.send();.....</pre.        >.        <p>.  
+0dc0:         It would be impossible for Reqres to know your applicati
+0e00: on data, so.          the API will respond from a sample set of 
+0e40: Pantone colour data.        </p>.        <pre>{.    "data":{.   
+0e80:      "id":3,.        "name":"true red",.        "year":2002,.   
+0ec0:      "pantone_value":"19-1664".    }.}.....</pre.        >.     
+0f00:    <p>.          It's entirely possible to get sample data into 
+0f40: your interface in.          seconds!.        </p>.      </div>. 
+0f80:    </section>..    <h2 class="t-center heading">Still don't real
+0fc0: ly get it...</h2>.    <hr class="dark" />.    <section class="te
+1000: chnical-bits" id="technical-bits">.      <ul class="iconed">.   
+1040:      <li>.          <i class="fa fa-rocket"></i>.          <p>. 
+1080:            <strong>Reqres is a <em>real</em> API</strong>.      
+10c0:     </p>.          <p>.            Reqres simulates real applica
+1100: tion scenarios. If you want to test a.            user authentic
+1140: ation system, Reqres will respond to a successful.            lo
+1180: gin/register request with a token for you to identify a sample. 
+11c0:            user, or with a 403 forbidden response to an unsucces
+1200: sful.            login/registration attempt. <br /><br />A commo
+1240: n front-end scenario.            that's easily forgotten is load
+1280: ing states, which can be easily.            simulated through Re
+12c0: qres by appending <br /><span class="code".              >?delay
+1300: =&lt;a number of seconds&gt;</span.            >.            to 
+1340: any endpoint URL, which will delay the API response time..      
+1380:       Animated loading GIFs &amp; SVGs at the ready!.          <
+13c0: /p>.        </li>.        <li>.          <i class="fa fa-bolt"><
+1400: /i>.          <p><strong>Technical demos and tutorials</strong><
+1440: /p>.          <p>.            If you're trying to demonstrate a 
+1480: front-end (JavaScript-based).            concept, you don't real
+14c0: ly want the hassle of setting up an API, or.            even a s
+1500: erver (especially during a live workshop or demo).<br /><br />. 
+1540:            You can just write your HTML, CSS &amp; JavaScript as
+1580:  usual and send.            Reqres AJAX requests, which will res
+15c0: pond with the expected response.            codes and output..  
+1600:         </p>.        </li>..        <li>.          <i class="fa 
+1640: fa-file-code-o"></i>.          <p><strong>Rapid prototyping of i
+1680: nterfaces</strong></p>.          <p>.            When prototypin
+16c0: g a new interface, you just want an API.            <em>there</e
+1700: m>, with minimal setup effort involved. Normally, I'd.          
+1740:   point people, who aren't too familiar with backend programming
+1780: , to.            <a href="http://sailsjs.org">Sailsjs</a> which 
+17c0: can auto-generate a.            REST-API for you from the comman
+1800: d line.<br /><br />.            However, you will need Node.js i
+1840: nstalled and some familiarity of how.            Node.js works. 
+1880: If that sounds like too much hassle and way too.            daun
+18c0: ting, Reqres is just a URL. Sending it an AJAX request is step. 
+1900:            1...there is no step 2..          </p>.        </li>.
+1940:       </ul>.    </section>..    <h2 class="t-center heading">Pea
+1980: ce of mind</h2>.    <hr class="dark" />.    <section class="peac
+19c0: e-of-mind" id="peace-of-mind">.      <i class="fa fa-lock"></i>.
+1a00:       <p>.        It might seem <strong>pretty weird</strong> to
+1a40:  be sending your data to a.        3rd party API, but I can assu
+1a80: re you, Reqres.        <strong>does not store any of your data</
+1ac0: strong> at all. Once you send.        it to us, we just send it 
+1b00: straight back...and then it's gone!.      </p>.    </section>.. 
+1b40:     <h2 class="t-center heading">Advertising</h2>.    <hr class=
+1b80: "dark" />.    <section class="pro" id="pro">.      <p>Do you wan
+1bc0: t to advertise your jobs/tools/software/cats through Reqres to m
+1c00: illions of developers every week?.      Click for more <a href="
+1c40: https://www.dropbox.com/s/2w7gaeydx02qs40/Reqres_Advertising_Pro
+1c80: posal.pdf?dl=0">info [pdf]</a> on the ads..      <a href="/cdn-c
+1cc0: gi/l/email-protection#caa2afa6a6a58aa8afa4a2a5bdaea6afe4a3a7">Co
+1d00: ntact</a> for pricing and questions.</p>.    </section>..    <h2
+1d40:  class="t-center heading">Looking for pro features?</h2>.    <hr
+1d80:  class="dark" />.    <section class="pro" id="pro">.      <butto
+1dc0: n id="trigger-pro" class="large">Upgrade</button>..      <div id
+1e00: ="pro-form" class="pro-form">.        <h3>.          <strong>Ace
+1e40: .</strong> Pro features coming real soon. Stick your email.     
+1e80:      in here to be notified and help build our pro tier..       
+1ec0:  </h3>.        <!-- Begin Mailchimp Signup Form -->.        <lin
+1f00: k.          href="//cdn-images.mailchimp.com/embedcode/classic-1
+1f40: 0_7.css".          rel="stylesheet".          type="text/css".  
+1f80:       />.        <div id="mc_embed_signup">.          <form.    
+1fc0:         action="https://benhowdle.us20.list-manage.com/subscribe
+2000: /post?u=8c58165749318545a89cd1b21&amp;id=544f278469".           
+2040:  method="post".            id="mc-embedded-subscribe-form".     
+2080:        name="mc-embedded-subscribe-form".            class="vali
+20c0: date".            target="_blank".            novalidate.       
+2100:    >.            <div id="mc_embed_signup_scroll">.             
+2140:  <div class="mc-field-group">.                <label for="mce-EM
+2180: AIL">Email Address </label>.                <input.             
+21c0:      type="email".                  value="".                  n
+2200: ame="EMAIL".                  class="required email".           
+2240:        id="mce-EMAIL".                />.              </div>.  
+2280:             <div id="mce-responses" class="clear">.             
+22c0:    <div.                  class="response".                  id=
+2300: "mce-error-response".                  style="display:none".    
+2340:             ></div>.                <div.                  class
+2380: ="response".                  id="mce-success-response".        
+23c0:           style="display:none".                ></div>.         
+2400:      </div>.              <!-- real people should not fill this 
+2440: in and expect good things - do not remove this or risk form bot 
+2480: signups-->.              <div.                style="position: a
+24c0: bsolute; left: -5000px;".                aria-hidden="true".    
+2500:           >.                <input.                  type="text"
+2540: .                  name="b_8c58165749318545a89cd1b21_544f278469"
+2580: .                  tabindex="-1".                  value="".    
+25c0:             />.              </div>.              <div class="cl
+2600: ear">.                <input.                  type="submit".   
+2640:                value="Subscribe".                  name="subscri
+2680: be".                  id="mc-embedded-subscribe".               
+26c0:    class="button".                />.              </div>.      
+2700:       </div>.          </form>.        </div>..        <!--End m
+2740: c_embed_signup-->.      </div>.    </section>.  </div>.</div>.. 
+2780:    </div>.    <footer>.      <div class="wrap">.        <hr clas
+27c0: s="dark" />.        <p class="t-center">.          Made for deve
+2800: lopers and designers by.          <a href="http://benhowdle.im">
+2840: Ben Howdle</a>.        </p>.      </div>.    </footer>.    <scri
+2880: pt data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflar
+28c0: e-static/email-decode.min.js"></script><script type="text/javasc
+2900: ript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.
+2940: 3/fastclick.min.js"></script>.    <script src="/js/app.js"></scr
+2980: ipt>.    <!-- Global site tag (gtag.js) - Google Analytics -->. 
+29c0:    <script async src="https://www.googletagmanager.com/gtag/js?i
+2a00: d=UA-174008107-1">.    </script>.    <script>.      window.dataL
+2a40: ayer = window.dataLayer || [];.      function gtag(){dataLayer.p
+2a80: ush(arguments);}.      gtag('js', new Date());..      gtag('conf
+2ac0: ig', 'UA-174008107-1');.    </script>.    <script>.      (functi
+2b00: on(i, s, o, g, r, a, m) {.        i["GoogleAnalyticsObject"] = r
+2b40: ;.        (i[r] =.          i[r] ||.          function() {.     
+2b80:        (i[r].q = i[r].q || []).push(arguments);.          }),.  
+2bc0:         (i[r].l = 1 * new Date());.        (a = s.createElement(
+2c00: o)), (m = s.getElementsByTagName(o)[0]);.        a.async = 1;.  
+2c40:       a.src = g;.        m.parentNode.insertBefore(a, m);.      
+2c80: })(.        window,.        document,.        "script",.        
+2cc0: "//www.google-analytics.com/analytics.js",.        "ga".      );
+2d00: ..      ga("create", "UA-55888877-1", "auto");.      ga("send", 
+2d40: "pageview");.    </script>.  </body>.</html>.
+2d6f: 0
+2d72: 
+== Info: Connection #0 to host reqres.in left intact

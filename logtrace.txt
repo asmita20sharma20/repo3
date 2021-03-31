@@ -1,0 +1,1411 @@
+== Info:   Trying 104.27.135.11...
+== Info: TCP_NODELAY set
+== Info: Connected to reqres.in (104.27.135.11) port 443 (#0)
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 174 bytes...
+== Info: schannel: sent initial handshake data: sent 174 bytes
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 1260
+== Info: schannel: encrypted data buffer: offset 1260 length 4096
+== Info: schannel: encrypted data length: 1188
+== Info: schannel: encrypted data buffer: offset 1188 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 1152
+== Info: schannel: encrypted data buffer: offset 2340 length 4096
+== Info: schannel: sending next handshake data: sending 93 bytes...
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 2/3)
+== Info: schannel: encrypted data got 258
+== Info: schannel: encrypted data buffer: offset 258 length 4096
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with reqres.in port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 73 bytes (0x49)
+0000: 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a GET / HTTP/1.1..
+0010: 48 6f 73 74 3a 20 72 65 71 72 65 73 2e 69 6e 0d Host: reqres.in.
+0020: 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 63 75 72 .User-Agent: cur
+0030: 6c 2f 37 2e 35 35 2e 31 0d 0a 41 63 63 65 70 74 l/7.55.1..Accept
+0040: 3a 20 2a 2f 2a 0d 0a 0d 0a                      : */*....
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 2658
+== Info: schannel: encrypted data buffer: offset 2658 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data length: 1260
+== Info: schannel: encrypted data cached: offset 1260 length 103424
+== Info: schannel: failed to decrypt data, need more data
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 1369
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d HTTP/1.1 200 OK.
+0010: 0a                                              .
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 54 75 65 2c 20 31 33 20 4f 63 Date: Tue, 13 Oc
+0010: 74 20 32 30 32 30 20 31 35 3a 30 37 3a 30 38 20 t 2020 15:07:08 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 40 bytes (0x28)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 Content-Type: te
+0010: 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65 74 xt/html; charset
+0020: 3d 75 74 66 2d 38 0d 0a                         =utf-8..
+<= Recv header, 28 bytes (0x1c)
+0000: 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 6e Transfer-Encodin
+0010: 67 3a 20 63 68 75 6e 6b 65 64 0d 0a             g: chunked..
+<= Recv header, 24 bytes (0x18)
+0000: 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 Connection: keep
+0010: 2d 61 6c 69 76 65 0d 0a                         -alive..
+<= Recv header, 162 bytes (0xa2)
+0000: 53 65 74 2d 43 6f 6f 6b 69 65 3a 20 5f 5f 63 66 Set-Cookie: __cf
+0010: 64 75 69 64 3d 64 37 65 35 32 34 66 35 65 61 64 duid=d7e524f5ead
+0020: 38 37 62 61 65 32 31 36 30 36 66 37 32 66 66 39 87bae21606f72ff9
+0030: 62 34 61 31 62 38 31 36 30 32 36 30 31 36 32 38 b4a1b81602601628
+0040: 3b 20 65 78 70 69 72 65 73 3d 54 68 75 2c 20 31 ; expires=Thu, 1
+0050: 32 2d 4e 6f 76 2d 32 30 20 31 35 3a 30 37 3a 30 2-Nov-20 15:07:0
+0060: 38 20 47 4d 54 3b 20 70 61 74 68 3d 2f 3b 20 64 8 GMT; path=/; d
+0070: 6f 6d 61 69 6e 3d 2e 72 65 71 72 65 73 2e 69 6e omain=.reqres.in
+0080: 3b 20 48 74 74 70 4f 6e 6c 79 3b 20 53 61 6d 65 ; HttpOnly; Same
+0090: 53 69 74 65 3d 4c 61 78 3b 20 53 65 63 75 72 65 Site=Lax; Secure
+00a0: 0d 0a                                           ..
+<= Recv header, 23 bytes (0x17)
+0000: 58 2d 50 6f 77 65 72 65 64 2d 42 79 3a 20 45 78 X-Powered-By: Ex
+0010: 70 72 65 73 73 0d 0a                            press..
+<= Recv header, 32 bytes (0x20)
+0000: 41 63 63 65 73 73 2d 43 6f 6e 74 72 6f 6c 2d 41 Access-Control-A
+0010: 6c 6c 6f 77 2d 4f 72 69 67 69 6e 3a 20 2a 0d 0a llow-Origin: *..
+<= Recv header, 16 bytes (0x10)
+0000: 56 69 61 3a 20 31 2e 31 20 76 65 67 75 72 0d 0a Via: 1.1 vegur..
+<= Recv header, 30 bytes (0x1e)
+0000: 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6d Cache-Control: m
+0010: 61 78 2d 61 67 65 3d 31 34 34 30 30 0d 0a       ax-age=14400..
+<= Recv header, 22 bytes (0x16)
+0000: 43 46 2d 43 61 63 68 65 2d 53 74 61 74 75 73 3a CF-Cache-Status:
+0010: 20 48 49 54 0d 0a                                HIT..
+<= Recv header, 11 bytes (0xb)
+0000: 41 67 65 3a 20 36 39 35 33 0d 0a                Age: 6953..
+<= Recv header, 22 bytes (0x16)
+0000: 41 63 63 65 70 74 2d 52 61 6e 67 65 73 3a 20 62 Accept-Ranges: b
+0010: 79 74 65 73 0d 0a                               ytes..
+<= Recv header, 49 bytes (0x31)
+0000: 63 66 2d 72 65 71 75 65 73 74 2d 69 64 3a 20 30 cf-request-id: 0
+0010: 35 63 34 31 39 34 62 39 34 30 30 30 30 30 37 32 5c4194b940000072
+0020: 36 63 35 33 65 34 32 30 30 30 30 30 30 30 31 0d 6c53e4200000001.
+0030: 0a                                              .
+<= Recv header, 100 bytes (0x64)
+0000: 45 78 70 65 63 74 2d 43 54 3a 20 6d 61 78 2d 61 Expect-CT: max-a
+0010: 67 65 3d 36 30 34 38 30 30 2c 20 72 65 70 6f 72 ge=604800, repor
+0020: 74 2d 75 72 69 3d 22 68 74 74 70 73 3a 2f 2f 72 t-uri="https://r
+0030: 65 70 6f 72 74 2d 75 72 69 2e 63 6c 6f 75 64 66 eport-uri.cloudf
+0040: 6c 61 72 65 2e 63 6f 6d 2f 63 64 6e 2d 63 67 69 lare.com/cdn-cgi
+0050: 2f 62 65 61 63 6f 6e 2f 65 78 70 65 63 74 2d 63 /beacon/expect-c
+0060: 74 22 0d 0a                                     t"..
+<= Recv header, 143 bytes (0x8f)
+0000: 52 65 70 6f 72 74 2d 54 6f 3a 20 7b 22 65 6e 64 Report-To: {"end
+0010: 70 6f 69 6e 74 73 22 3a 5b 7b 22 75 72 6c 22 3a points":[{"url":
+0020: 22 68 74 74 70 73 3a 5c 2f 5c 2f 61 2e 6e 65 6c "https:\/\/a.nel
+0030: 2e 63 6c 6f 75 64 66 6c 61 72 65 2e 63 6f 6d 5c .cloudflare.com\
+0040: 2f 72 65 70 6f 72 74 3f 6c 6b 67 2d 63 6f 6c 6f /report?lkg-colo
+0050: 3d 32 31 26 6c 6b 67 2d 74 69 6d 65 3d 31 36 30 =21&lkg-time=160
+0060: 32 36 30 31 36 32 39 22 7d 5d 2c 22 67 72 6f 75 2601629"}],"grou
+0070: 70 22 3a 22 63 66 2d 6e 65 6c 22 2c 22 6d 61 78 p":"cf-nel","max
+0080: 5f 61 67 65 22 3a 36 30 34 38 30 30 7d 0d 0a    _age":604800}..
+<= Recv header, 46 bytes (0x2e)
+0000: 4e 45 4c 3a 20 7b 22 72 65 70 6f 72 74 5f 74 6f NEL: {"report_to
+0010: 22 3a 22 63 66 2d 6e 65 6c 22 2c 22 6d 61 78 5f ":"cf-nel","max_
+0020: 61 67 65 22 3a 36 30 34 38 30 30 7d 0d 0a       age":604800}..
+<= Recv header, 20 bytes (0x14)
+0000: 53 65 72 76 65 72 3a 20 63 6c 6f 75 64 66 6c 61 Server: cloudfla
+0010: 72 65 0d 0a                                     re..
+<= Recv header, 30 bytes (0x1e)
+0000: 43 46 2d 52 41 59 3a 20 35 65 31 39 66 37 66 32 CF-RAY: 5e19f7f2
+0010: 38 38 33 35 30 37 32 36 2d 4c 48 52 0d 0a       88350726-LHR..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 515 bytes (0x203)
+0000: 34 61 32 37 0d 0a 3c 21 44 4f 43 54 59 50 45 20 4a27..<!DOCTYPE 
+0010: 68 74 6d 6c 3e 0a 3c 68 74 6d 6c 20 6c 61 6e 67 html>.<html lang
+0020: 3d 22 65 6e 22 3e 0a 20 20 3c 68 65 61 64 3e 0a ="en">.  <head>.
+0030: 20 20 20 20 3c 21 2d 2d 20 47 6f 6f 67 6c 65 20     <!-- Google 
+0040: 54 61 67 20 4d 61 6e 61 67 65 72 20 2d 2d 3e 0a Tag Manager -->.
+0050: 20 20 20 20 3c 73 63 72 69 70 74 3e 0a 20 20 20     <script>.   
+0060: 20 20 20 28 66 75 6e 63 74 69 6f 6e 28 77 2c 20    (function(w, 
+0070: 64 2c 20 73 2c 20 6c 2c 20 69 29 20 7b 0a 20 20 d, s, l, i) {.  
+0080: 20 20 20 20 20 20 77 5b 6c 5d 20 3d 20 77 5b 6c       w[l] = w[l
+0090: 5d 20 7c 7c 20 5b 5d 3b 0a 20 20 20 20 20 20 20 ] || [];.       
+00a0: 20 77 5b 6c 5d 2e 70 75 73 68 28 7b 20 22 67 74  w[l].push({ "gt
+00b0: 6d 2e 73 74 61 72 74 22 3a 20 6e 65 77 20 44 61 m.start": new Da
+00c0: 74 65 28 29 2e 67 65 74 54 69 6d 65 28 29 2c 20 te().getTime(), 
+00d0: 65 76 65 6e 74 3a 20 22 67 74 6d 2e 6a 73 22 20 event: "gtm.js" 
+00e0: 7d 29 3b 0a 20 20 20 20 20 20 20 20 76 61 72 20 });.        var 
+00f0: 66 20 3d 20 64 2e 67 65 74 45 6c 65 6d 65 6e 74 f = d.getElement
+0100: 73 42 79 54 61 67 4e 61 6d 65 28 73 29 5b 30 5d sByTagName(s)[0]
+0110: 2c 0a 20 20 20 20 20 20 20 20 20 20 6a 20 3d 20 ,.          j = 
+0120: 64 2e 63 72 65 61 74 65 45 6c 65 6d 65 6e 74 28 d.createElement(
+0130: 73 29 2c 0a 20 20 20 20 20 20 20 20 20 20 64 6c s),.          dl
+0140: 20 3d 20 6c 20 21 3d 20 22 64 61 74 61 4c 61 79  = l != "dataLay
+0150: 65 72 22 20 3f 20 22 26 6c 3d 22 20 2b 20 6c 20 er" ? "&l=" + l 
+0160: 3a 20 22 22 3b 0a 20 20 20 20 20 20 20 20 6a 2e : "";.        j.
+0170: 61 73 79 6e 63 20 3d 20 74 72 75 65 3b 0a 20 20 async = true;.  
+0180: 20 20 20 20 20 20 6a 2e 73 72 63 20 3d 20 22 68       j.src = "h
+0190: 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f 67 6c ttps://www.googl
+01a0: 65 74 61 67 6d 61 6e 61 67 65 72 2e 63 6f 6d 2f etagmanager.com/
+01b0: 67 74 6d 2e 6a 73 3f 69 64 3d 22 20 2b 20 69 20 gtm.js?id=" + i 
+01c0: 2b 20 64 6c 3b 0a 20 20 20 20 20 20 20 20 66 2e + dl;.        f.
+01d0: 70 61 72 65 6e 74 4e 6f 64 65 2e 69 6e 73 65 72 parentNode.inser
+01e0: 74 42 65 66 6f 72 65 28 6a 2c 20 66 29 3b 0a 20 tBefore(j, f);. 
+01f0: 20 20 20 20 20 7d 29 28 77 69 6e 64 6f 77 2c 20      })(window, 
+0200: 64 6f 63                                        doc
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 1260 length 103424
+== Info: schannel: encrypted data got 2658
+== Info: schannel: encrypted data buffer: offset 3918 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data length: 2520
+== Info: schannel: encrypted data cached: offset 2520 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 2738 length 102400
+== Info: schannel: encrypted data length: 1122
+== Info: schannel: encrypted data cached: offset 1122 length 103424
+== Info: schannel: failed to decrypt data, need more data
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 2738
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv data, 2738 bytes (0xab2)
+0000: 75 6d 65 6e 74 2c 20 22 73 63 72 69 70 74 22 2c ument, "script",
+0010: 20 22 64 61 74 61 4c 61 79 65 72 22 2c 20 22 47  "dataLayer", "G
+0020: 54 4d 2d 4b 42 36 32 32 4b 46 22 29 3b 0a 20 20 TM-KB622KF");.  
+0030: 20 20 3c 2f 73 63 72 69 70 74 3e 0a 20 20 20 20   </script>.    
+0040: 3c 21 2d 2d 20 45 6e 64 20 47 6f 6f 67 6c 65 20 <!-- End Google 
+0050: 54 61 67 20 4d 61 6e 61 67 65 72 20 2d 2d 3e 0a Tag Manager -->.
+0060: 20 20 20 20 3c 6d 65 74 61 20 63 68 61 72 73 65     <meta charse
+0070: 74 3d 22 75 74 66 2d 38 22 20 2f 3e 0a 20 20 20 t="utf-8" />.   
+0080: 20 3c 6d 65 74 61 0a 20 20 20 20 20 20 6e 61 6d  <meta.      nam
+0090: 65 3d 22 76 69 65 77 70 6f 72 74 22 0a 20 20 20 e="viewport".   
+00a0: 20 20 20 63 6f 6e 74 65 6e 74 3d 22 77 69 64 74    content="widt
+00b0: 68 3d 64 65 76 69 63 65 2d 77 69 64 74 68 2c 20 h=device-width, 
+00c0: 69 6e 69 74 69 61 6c 2d 73 63 61 6c 65 3d 31 2e initial-scale=1.
+00d0: 30 2c 20 6d 61 78 69 6d 75 6d 2d 73 63 61 6c 65 0, maximum-scale
+00e0: 3d 31 2e 30 22 0a 20 20 20 20 2f 3e 0a 20 20 20 =1.0".    />.   
+00f0: 20 3c 6d 65 74 61 0a 20 20 20 20 20 20 6e 61 6d  <meta.      nam
+0100: 65 3d 22 64 65 73 63 72 69 70 74 69 6f 6e 22 0a e="description".
+0110: 20 20 20 20 20 20 63 6f 6e 74 65 6e 74 3d 22 41       content="A
+0120: 20 68 6f 73 74 65 64 20 52 45 53 54 2d 41 50 49  hosted REST-API
+0130: 20 72 65 61 64 79 20 74 6f 20 72 65 73 70 6f 6e  ready to respon
+0140: 64 20 74 6f 20 79 6f 75 72 20 41 4a 41 58 20 72 d to your AJAX r
+0150: 65 71 75 65 73 74 73 22 0a 20 20 20 20 2f 3e 0a equests".    />.
+0160: 20 20 20 20 3c 74 69 74 6c 65 3e 0a 20 20 20 20     <title>.    
+0170: 20 20 52 65 71 72 65 73 20 2d 20 41 20 68 6f 73   Reqres - A hos
+0180: 74 65 64 20 52 45 53 54 2d 41 50 49 20 72 65 61 ted REST-API rea
+0190: 64 79 20 74 6f 20 72 65 73 70 6f 6e 64 20 74 6f dy to respond to
+01a0: 20 79 6f 75 72 20 41 4a 41 58 20 72 65 71 75 65  your AJAX reque
+01b0: 73 74 73 0a 20 20 20 20 3c 2f 74 69 74 6c 65 3e sts.    </title>
+01c0: 0a 20 20 20 20 3c 6c 69 6e 6b 0a 20 20 20 20 20 .    <link.     
+01d0: 20 68 72 65 66 3d 22 2f 2f 6d 61 78 63 64 6e 2e  href="//maxcdn.
+01e0: 62 6f 6f 74 73 74 72 61 70 63 64 6e 2e 63 6f 6d bootstrapcdn.com
+01f0: 2f 66 6f 6e 74 2d 61 77 65 73 6f 6d 65 2f 34 2e /font-awesome/4.
+0200: 32 2e 30 2f 63 73 73 2f 66 6f 6e 74 2d 61 77 65 2.0/css/font-awe
+0210: 73 6f 6d 65 2e 6d 69 6e 2e 63 73 73 22 0a 20 20 some.min.css".  
+0220: 20 20 20 20 72 65 6c 3d 22 73 74 79 6c 65 73 68     rel="stylesh
+0230: 65 65 74 22 0a 20 20 20 20 2f 3e 0a 0a 20 20 20 eet".    />..   
+0240: 20 3c 6c 69 6e 6b 20 72 65 6c 3d 22 73 74 79 6c  <link rel="styl
+0250: 65 73 68 65 65 74 22 20 68 72 65 66 3d 22 2f 63 esheet" href="/c
+0260: 73 73 2f 61 70 70 2e 63 73 73 22 20 2f 3e 0a 20 ss/app.css" />. 
+0270: 20 3c 2f 68 65 61 64 3e 0a 20 20 3c 62 6f 64 79  </head>.  <body
+0280: 3e 0a 20 20 20 20 3c 64 69 76 20 63 6c 61 73 73 >.    <div class
+0290: 3d 22 68 65 61 64 65 72 2d 63 6f 6e 74 65 6e 74 ="header-content
+02a0: 22 3e 0a 20 20 20 20 20 20 3c 68 65 61 64 65 72 ">.      <header
+02b0: 20 63 6c 61 73 73 3d 22 6d 61 69 6e 2d 68 65 61  class="main-hea
+02c0: 64 65 72 22 3e 0a 20 20 20 20 20 20 20 20 3c 73 der">.        <s
+02d0: 65 63 74 69 6f 6e 20 63 6c 61 73 73 3d 22 77 72 ection class="wr
+02e0: 61 70 22 3e 0a 20 20 20 20 20 20 20 20 20 20 3c ap">.          <
+02f0: 68 31 20 63 6c 61 73 73 3d 22 6c 6f 67 6f 22 3e h1 class="logo">
+0300: 3c 61 20 68 72 65 66 3d 22 2f 22 3e 52 65 71 26 <a href="/">Req&
+0310: 23 38 32 30 31 3b 7c 26 23 38 32 30 31 3b 52 65 #8201;|&#8201;Re
+0320: 73 3c 2f 61 3e 3c 2f 68 31 3e 0a 20 20 20 20 20 s</a></h1>.     
+0330: 20 20 20 3c 2f 73 65 63 74 69 6f 6e 3e 0a 20 20    </section>.  
+0340: 20 20 20 20 3c 2f 68 65 61 64 65 72 3e 0a 20 20     </header>.  
+0350: 20 20 20 20 3c 6d 61 69 6e 20 63 6c 61 73 73 3d     <main class=
+0360: 22 74 68 65 2d 73 65 6c 6c 22 3e 0a 20 20 20 20 "the-sell">.    
+0370: 20 20 20 20 3c 64 69 76 20 63 6c 61 73 73 3d 22     <div class="
+0380: 77 72 61 70 22 3e 0a 20 20 20 20 20 20 20 20 20 wrap">.         
+0390: 20 3c 68 32 20 63 6c 61 73 73 3d 22 74 61 67 6c  <h2 class="tagl
+03a0: 69 6e 65 22 3e 54 65 73 74 20 79 6f 75 72 20 66 ine">Test your f
+03b0: 72 6f 6e 74 2d 65 6e 64 20 61 67 61 69 6e 73 74 ront-end against
+03c0: 20 61 20 72 65 61 6c 20 41 50 49 3c 2f 68 32 3e  a real API</h2>
+03d0: 0a 20 20 20 20 20 20 20 20 20 20 3c 73 65 63 74 .          <sect
+03e0: 69 6f 6e 20 63 6c 61 73 73 3d 22 6b 65 79 2d 73 ion class="key-s
+03f0: 65 6c 6c 73 22 3e 0a 20 20 20 20 20 20 20 20 20 ells">.         
+0400: 20 20 20 3c 64 69 76 20 63 6c 61 73 73 3d 22 73    <div class="s
+0410: 65 6c 6c 22 3e 0a 20 20 20 20 20 20 20 20 20 20 ell">.          
+0420: 20 20 20 20 3c 64 69 76 20 63 6c 61 73 73 3d 22     <div class="
+0430: 76 2d 63 65 6e 74 65 72 22 3e 0a 20 20 20 20 20 v-center">.     
+0440: 20 20 20 20 20 20 20 20 20 20 20 3c 68 33 3e 46            <h3>F
+0450: 61 6b 65 20 64 61 74 61 3c 2f 68 33 3e 0a 20 20 ake data</h3>.  
+0460: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 70               <p
+0470: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 >.              
+0480: 20 20 20 20 4e 6f 20 6d 6f 72 65 20 74 65 64 69     No more tedi
+0490: 6f 75 73 20 73 61 6d 70 6c 65 20 64 61 74 61 20 ous sample data 
+04a0: 63 72 65 61 74 69 6f 6e 2c 20 77 65 27 76 65 20 creation, we've 
+04b0: 67 6f 74 20 69 74 20 63 6f 76 65 72 65 64 2e 0a got it covered..
+04c0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+04d0: 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 20 20 20 </p>.           
+04e0: 20 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20    </div>.      
+04f0: 20 20 20 20 20 20 20 20 3c 69 20 63 6c 61 73 73         <i class
+0500: 3d 22 66 61 20 66 61 2d 63 6c 6f 75 64 2d 64 6f ="fa fa-cloud-do
+0510: 77 6e 6c 6f 61 64 22 3e 3c 2f 69 3e 0a 20 20 20 wnload"></i>.   
+0520: 20 20 20 20 20 20 20 20 20 3c 2f 64 69 76 3e 0a          </div>.
+0530: 20 20 20 20 20 20 20 20 20 20 20 20 3c 64 69 76             <div
+0540: 20 63 6c 61 73 73 3d 22 73 65 6c 6c 22 3e 0a 20  class="sell">. 
+0550: 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 64 69              <di
+0560: 76 20 63 6c 61 73 73 3d 22 76 2d 63 65 6e 74 65 v class="v-cente
+0570: 72 22 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 r">.            
+0580: 20 20 20 20 3c 68 33 3e 52 65 61 6c 20 72 65 73     <h3>Real res
+0590: 70 6f 6e 73 65 73 3c 2f 68 33 3e 0a 20 20 20 20 ponses</h3>.    
+05a0: 20 20 20 20 20 20 20 20 20 20 20 20 3c 70 3e 0a             <p>.
+05b0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+05c0: 20 20 44 65 76 65 6c 6f 70 20 77 69 74 68 20 72   Develop with r
+05d0: 65 61 6c 20 72 65 73 70 6f 6e 73 65 20 63 6f 64 eal response cod
+05e0: 65 73 2e 20 47 45 54 2c 20 50 4f 53 54 2c 20 50 es. GET, POST, P
+05f0: 55 54 20 26 61 6d 70 3b 20 44 45 4c 45 54 45 0a UT &amp; DELETE.
+0600: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+0610: 20 20 73 75 70 70 6f 72 74 65 64 2e 0a 20 20 20   supported..   
+0620: 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 70              </p
+0630: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 >.              
+0640: 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 20 20 20 </div>.         
+0650: 20 20 20 20 20 3c 69 20 63 6c 61 73 73 3d 22 66      <i class="f
+0660: 61 20 66 61 2d 63 6f 64 65 22 3e 3c 2f 69 3e 0a a fa-code"></i>.
+0670: 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 64 69             </di
+0680: 76 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c v>.            <
+0690: 64 69 76 20 63 6c 61 73 73 3d 22 73 65 6c 6c 22 div class="sell"
+06a0: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 >.              
+06b0: 3c 64 69 76 20 63 6c 61 73 73 3d 22 76 2d 63 65 <div class="v-ce
+06c0: 6e 74 65 72 22 3e 0a 20 20 20 20 20 20 20 20 20 nter">.         
+06d0: 20 20 20 20 20 20 20 3c 68 33 3e 41 6c 77 61 79        <h3>Alway
+06e0: 73 2d 6f 6e 3c 2f 68 33 3e 0a 20 20 20 20 20 20 s-on</h3>.      
+06f0: 20 20 20 20 20 20 20 20 20 20 3c 70 3e 0a 20 20           <p>.  
+0700: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+0710: 32 34 2f 37 20 3c 73 74 72 6f 6e 67 3e 3c 65 6d 24/7 <strong><em
+0720: 3e 66 72 65 65 3c 2f 65 6d 3e 3c 2f 73 74 72 6f >free</em></stro
+0730: 6e 67 3e 20 61 63 63 65 73 73 20 69 6e 20 79 6f ng> access in yo
+0740: 75 72 20 64 65 76 65 6c 6f 70 6d 65 6e 74 0a 20 ur development. 
+0750: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+0760: 20 70 68 61 73 65 73 2e 20 47 6f 20 6e 75 74 73  phases. Go nuts
+0770: 2e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 ..              
+0780: 20 20 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 20   </p>.         
+0790: 20 20 20 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20      </div>.    
+07a0: 20 20 20 20 20 20 20 20 20 20 3c 69 20 63 6c 61           <i cla
+07b0: 73 73 3d 22 66 61 20 66 61 2d 74 6f 67 67 6c 65 ss="fa fa-toggle
+07c0: 2d 6f 6e 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 20 -on"></i>.      
+07d0: 20 20 20 20 20 20 3c 2f 64 69 76 3e 0a 20 20 20       </div>.   
+07e0: 20 20 20 20 20 20 20 3c 2f 73 65 63 74 69 6f 6e        </section
+07f0: 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 68 32 20 >.          <h2 
+0800: 63 6c 61 73 73 3d 22 74 61 67 6c 69 6e 65 22 3e class="tagline">
+0810: 0a 20 20 20 20 20 20 20 20 20 20 20 20 41 20 68 .            A h
+0820: 6f 73 74 65 64 20 52 45 53 54 2d 41 50 49 20 72 osted REST-API r
+0830: 65 61 64 79 20 74 6f 20 72 65 73 70 6f 6e 64 20 eady to respond 
+0840: 74 6f 20 79 6f 75 72 20 41 4a 41 58 20 72 65 71 to your AJAX req
+0850: 75 65 73 74 73 2e 0a 20 20 20 20 20 20 20 20 20 uests..         
+0860: 20 3c 2f 68 32 3e 0a 20 20 20 20 20 20 20 20 20  </h2>.         
+0870: 20 3c 64 69 76 20 63 6c 61 73 73 3d 22 74 2d 63  <div class="t-c
+0880: 65 6e 74 65 72 20 6d 61 69 6e 2d 61 72 72 6f 77 enter main-arrow
+0890: 22 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c ">.            <
+08a0: 69 20 63 6c 61 73 73 3d 22 66 61 20 66 61 2d 61 i class="fa fa-a
+08b0: 72 72 6f 77 2d 63 69 72 63 6c 65 2d 64 6f 77 6e rrow-circle-down
+08c0: 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 20 20 20 20 "></i>.         
+08d0: 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 20 20  </div>.        
+08e0: 20 20 3c 73 63 72 69 70 74 20 61 73 79 6e 63 20   <script async 
+08f0: 74 79 70 65 3d 22 74 65 78 74 2f 6a 61 76 61 73 type="text/javas
+0900: 63 72 69 70 74 22 20 73 72 63 3d 22 2f 2f 63 64 cript" src="//cd
+0910: 6e 2e 63 61 72 62 6f 6e 61 64 73 2e 63 6f 6d 2f n.carbonads.com/
+0920: 63 61 72 62 6f 6e 2e 6a 73 3f 73 65 72 76 65 3d carbon.js?serve=
+0930: 43 45 37 44 36 4b 33 45 26 70 6c 61 63 65 6d 65 CE7D6K3E&placeme
+0940: 6e 74 3d 72 65 71 72 65 73 69 6e 22 20 69 64 3d nt=reqresin" id=
+0950: 22 5f 63 61 72 62 6f 6e 61 64 73 5f 6a 73 22 3e "_carbonads_js">
+0960: 3c 2f 73 63 72 69 70 74 3e 0a 20 20 20 20 20 20 </script>.      
+0970: 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 3c   </div>.      <
+0980: 2f 6d 61 69 6e 3e 0a 20 20 20 20 3c 2f 64 69 76 /main>.    </div
+0990: 3e 0a 20 20 20 20 3c 64 69 76 20 63 6c 61 73 73 >.    <div class
+09a0: 3d 22 63 6f 6e 74 61 69 6e 65 72 22 3e 0a 20 20 ="container">.  
+09b0: 20 20 20 20 3c 64 69 76 20 63 6c 61 73 73 3d 22     <div class="
+09c0: 68 6f 6d 65 2d 63 6f 6e 74 65 6e 74 22 3e 0a 20 home-content">. 
+09d0: 20 3c 64 69 76 20 63 6c 61 73 73 3d 22 77 72 61  <div class="wra
+09e0: 70 22 3e 0a 20 20 20 20 3c 68 32 20 63 6c 61 73 p">.    <h2 clas
+09f0: 73 3d 22 74 2d 63 65 6e 74 65 72 20 68 65 61 64 s="t-center head
+0a00: 69 6e 67 22 3e 47 69 76 65 20 69 74 20 61 20 74 ing">Give it a t
+0a10: 72 79 3c 2f 68 32 3e 0a 20 20 20 20 3c 68 72 20 ry</h2>.    <hr 
+0a20: 63 6c 61 73 73 3d 22 64 61 72 6b 22 20 2f 3e 0a class="dark" />.
+0a30: 20 20 20 20 3c 73 65 63 74 69 6f 6e 20 63 6c 61     <section cla
+0a40: 73 73 3d 22 63 6f 6e 73 6f 6c 65 20 74 72 79 2d ss="console try-
+0a50: 61 70 69 2d 6c 69 6e 6b 73 22 20 69 64 3d 22 63 api-links" id="c
+0a60: 6f 6e 73 6f 6c 65 22 3e 0a 20 20 20 20 20 20 3c onsole">.      <
+0a70: 64 69 76 20 63 6c 61 73 73 3d 22 65 6e 64 70 6f div class="endpo
+0a80: 69 6e 74 73 22 20 64 61 74 61 2d 6b 65 79 3d 22 ints" data-key="
+0a90: 65 6e 64 70 6f 69 6e 74 73 22 3e 0a 20 20 20 20 endpoints">.    
+0aa0: 20 20 20 20 3c 75 6c 3e 0a 20 20 20 20 20 20 20     <ul>.       
+0ab0: 20 20                                             
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 1122 length 103424
+== Info: schannel: encrypted data got 14998
+== Info: schannel: encrypted data buffer: offset 16120 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data length: 14722
+== Info: schannel: encrypted data cached: offset 14722 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 2738 length 102400
+== Info: schannel: encrypted data length: 13324
+== Info: schannel: encrypted data cached: offset 13324 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 4107 length 102400
+== Info: schannel: encrypted data length: 11926
+== Info: schannel: encrypted data cached: offset 11926 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 5476 length 102400
+== Info: schannel: encrypted data length: 10528
+== Info: schannel: encrypted data cached: offset 10528 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 6845 length 102400
+== Info: schannel: encrypted data length: 9130
+== Info: schannel: encrypted data cached: offset 9130 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 8214 length 102400
+== Info: schannel: encrypted data length: 7732
+== Info: schannel: encrypted data cached: offset 7732 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 9583 length 102400
+== Info: schannel: encrypted data length: 6334
+== Info: schannel: encrypted data cached: offset 6334 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 10952 length 102400
+== Info: schannel: encrypted data length: 4936
+== Info: schannel: encrypted data cached: offset 4936 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 12321 length 102400
+== Info: schannel: encrypted data length: 3538
+== Info: schannel: encrypted data cached: offset 3538 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 13690 length 102400
+== Info: schannel: encrypted data length: 2140
+== Info: schannel: encrypted data cached: offset 2140 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 15059 length 102400
+== Info: schannel: encrypted data length: 742
+== Info: schannel: encrypted data cached: offset 742 length 103424
+== Info: schannel: decrypted data length: 679
+== Info: schannel: decrypted data added: 679
+== Info: schannel: decrypted data cached: offset 15738 length 102400
+== Info: schannel: encrypted data length: 34
+== Info: schannel: encrypted data cached: offset 34 length 103424
+== Info: schannel: decrypted data length: 5
+== Info: schannel: decrypted data added: 5
+== Info: schannel: decrypted data cached: offset 15743 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 15743 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 15743
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv data, 15743 bytes (0x3d7f)
+0000: 20 3c 6c 69 0a 20 20 20 20 20 20 20 20 20 20 20  <li.           
+0010: 20 64 61 74 61 2d 69 64 3d 22 75 73 65 72 73 22  data-id="users"
+0020: 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 61 74 .            dat
+0030: 61 2d 6b 65 79 3d 22 65 6e 64 70 6f 69 6e 74 22 a-key="endpoint"
+0040: 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 61 74 .            dat
+0050: 61 2d 68 74 74 70 3d 22 67 65 74 22 0a 20 20 20 a-http="get".   
+0060: 20 20 20 20 20 20 20 20 20 63 6c 61 73 73 3d 22          class="
+0070: 61 63 74 69 76 65 22 0a 20 20 20 20 20 20 20 20 active".        
+0080: 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20   >.            
+0090: 3c 61 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 <a.             
+00a0: 20 64 61 74 61 2d 6b 65 79 3d 22 74 72 79 2d 6c  data-key="try-l
+00b0: 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 20 20 ink".           
+00c0: 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20  >.             
+00d0: 20 4c 69 73 74 20 75 73 65 72 73 0a 20 20 20 20  List users.    
+00e0: 20 20 20 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20         </a>.   
+00f0: 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20        </li>.   
+0100: 20 20 20 20 20 20 20 3c 6c 69 0a 20 20 20 20 20        <li.     
+0110: 20 20 20 20 20 20 20 64 61 74 61 2d 69 64 3d 22        data-id="
+0120: 75 73 65 72 73 2d 73 69 6e 67 6c 65 22 0a 20 20 users-single".  
+0130: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b           data-k
+0140: 65 79 3d 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 ey="endpoint".  
+0150: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 68           data-h
+0160: 74 74 70 3d 22 67 65 74 22 0a 20 20 20 20 20 20 ttp="get".      
+0170: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20     >.          
+0180: 20 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20 20   <a.           
+0190: 20 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72 79    data-key="try
+01a0: 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 -link".         
+01b0: 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20    >.           
+01c0: 20 20 20 53 69 6e 67 6c 65 20 75 73 65 72 0a 20    Single user. 
+01d0: 20 20 20 20 20 20 20 20 20 20 20 3c 2f 61 3e 0a            </a>.
+01e0: 20 20 20 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a           </li>.
+01f0: 20 20 20 20 20 20 20 20 20 20 3c 6c 69 0a 20 20           <li.  
+0200: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 69           data-i
+0210: 64 3d 22 75 73 65 72 73 2d 73 69 6e 67 6c 65 2d d="users-single-
+0220: 6e 6f 74 2d 66 6f 75 6e 64 22 0a 20 20 20 20 20 not-found".     
+0230: 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79 3d        data-key=
+0240: 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 20 20 20 "endpoint".     
+0250: 20 20 20 20 20 20 20 64 61 74 61 2d 68 74 74 70        data-http
+0260: 3d 22 67 65 74 22 0a 20 20 20 20 20 20 20 20 20 ="get".         
+0270: 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c  >.            <
+0280: 61 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 a.              
+0290: 64 61 74 61 2d 6b 65 79 3d 22 74 72 79 2d 6c 69 data-key="try-li
+02a0: 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 nk".            
+02b0: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 >.              
+02c0: 53 69 6e 67 6c 65 20 75 73 65 72 20 6e 6f 74 20 Single user not 
+02d0: 66 6f 75 6e 64 0a 20 20 20 20 20 20 20 20 20 20 found.          
+02e0: 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20 20 20 20   </a>.         
+02f0: 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20 20 20 20  </li>.         
+0300: 20 3c 6c 69 0a 20 20 20 20 20 20 20 20 20 20 20  <li.           
+0310: 20 64 61 74 61 2d 69 64 3d 22 75 6e 6b 6e 6f 77  data-id="unknow
+0320: 6e 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 n".            d
+0330: 61 74 61 2d 6b 65 79 3d 22 65 6e 64 70 6f 69 6e ata-key="endpoin
+0340: 74 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 t".            d
+0350: 61 74 61 2d 68 74 74 70 3d 22 67 65 74 22 0a 20 ata-http="get". 
+0360: 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20 20          >.     
+0370: 20 20 20 20 20 20 20 3c 61 0a 20 20 20 20 20 20        <a.      
+0380: 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79         data-key
+0390: 3d 22 74 72 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 ="try-link".    
+03a0: 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20 20 20         >.      
+03b0: 20 20 20 20 20 20 20 20 4c 69 73 74 20 26 6c 74         List &lt
+03c0: 3b 72 65 73 6f 75 72 63 65 26 67 74 3b 0a 20 20 ;resource&gt;.  
+03d0: 20 20 20 20 20 20 20 20 20 20 3c 2f 61 3e 0a 20           </a>. 
+03e0: 20 20 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20          </li>. 
+03f0: 20 20 20 20 20 20 20 20 20 3c 6c 69 0a 20 20 20          <li.   
+0400: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 69 64          data-id
+0410: 3d 22 75 6e 6b 6e 6f 77 6e 2d 73 69 6e 67 6c 65 ="unknown-single
+0420: 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 61 ".            da
+0430: 74 61 2d 6b 65 79 3d 22 65 6e 64 70 6f 69 6e 74 ta-key="endpoint
+0440: 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 61 ".            da
+0450: 74 61 2d 68 74 74 70 3d 22 67 65 74 22 0a 20 20 ta-http="get".  
+0460: 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20 20 20         >.      
+0470: 20 20 20 20 20 20 3c 61 0a 20 20 20 20 20 20 20       <a.       
+0480: 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79 3d        data-key=
+0490: 22 74 72 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 "try-link".     
+04a0: 20 20 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20        >.       
+04b0: 20 20 20 20 20 20 20 53 69 6e 67 6c 65 20 26 6c        Single &l
+04c0: 74 3b 72 65 73 6f 75 72 63 65 26 67 74 3b 0a 20 t;resource&gt;. 
+04d0: 20 20 20 20 20 20 20 20 20 20 20 3c 2f 61 3e 0a            </a>.
+04e0: 20 20 20 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a           </li>.
+04f0: 20 20 20 20 20 20 20 20 20 20 3c 6c 69 0a 20 20           <li.  
+0500: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 69           data-i
+0510: 64 3d 22 75 6e 6b 6e 6f 77 6e 2d 73 69 6e 67 6c d="unknown-singl
+0520: 65 2d 6e 6f 74 2d 66 6f 75 6e 64 22 0a 20 20 20 e-not-found".   
+0530: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65          data-ke
+0540: 79 3d 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 20 y="endpoint".   
+0550: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 68 74          data-ht
+0560: 74 70 3d 22 67 65 74 22 0a 20 20 20 20 20 20 20 tp="get".       
+0570: 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20    >.           
+0580: 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20 20 20  <a.            
+0590: 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72 79 2d   data-key="try-
+05a0: 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 20 link".          
+05b0: 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20   >.            
+05c0: 20 20 53 69 6e 67 6c 65 20 26 6c 74 3b 72 65 73   Single &lt;res
+05d0: 6f 75 72 63 65 26 67 74 3b 20 6e 6f 74 20 66 6f ource&gt; not fo
+05e0: 75 6e 64 0a 20 20 20 20 20 20 20 20 20 20 20 20 und.            
+05f0: 3c 2f 61 3e 0a 20 20 20 20 20 20 20 20 20 20 3c </a>.          <
+0600: 2f 6c 69 3e 0a 20 20 20 20 20 20 20 20 20 20 3c /li>.          <
+0610: 6c 69 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 li.            d
+0620: 61 74 61 2d 69 64 3d 22 70 6f 73 74 22 0a 20 20 ata-id="post".  
+0630: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b           data-k
+0640: 65 79 3d 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 ey="endpoint".  
+0650: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 68           data-h
+0660: 74 74 70 3d 22 70 6f 73 74 22 0a 20 20 20 20 20 ttp="post".     
+0670: 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20      >.         
+0680: 20 20 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20    <a.          
+0690: 20 20 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72     data-key="tr
+06a0: 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 y-link".        
+06b0: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20     >.          
+06c0: 20 20 20 20 43 72 65 61 74 65 0a 20 20 20 20 20     Create.     
+06d0: 20 20 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20        </a>.    
+06e0: 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20       </li>.    
+06f0: 20 20 20 20 20 20 3c 6c 69 0a 20 20 20 20 20 20       <li.      
+0700: 20 20 20 20 20 20 64 61 74 61 2d 69 64 3d 22 70       data-id="p
+0710: 75 74 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 ut".            
+0720: 64 61 74 61 2d 6b 65 79 3d 22 65 6e 64 70 6f 69 data-key="endpoi
+0730: 6e 74 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 nt".            
+0740: 64 61 74 61 2d 68 74 74 70 3d 22 70 75 74 22 0a data-http="put".
+0750: 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20           >.    
+0760: 20 20 20 20 20 20 20 20 3c 61 0a 20 20 20 20 20         <a.     
+0770: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65          data-ke
+0780: 79 3d 22 74 72 79 2d 6c 69 6e 6b 22 0a 20 20 20 y="try-link".   
+0790: 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20 20          >.     
+07a0: 20 20 20 20 20 20 20 20 20 55 70 64 61 74 65 0a          Update.
+07b0: 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 61 3e             </a>
+07c0: 0a 20 20 20 20 20 20 20 20 20 20 3c 2f 6c 69 3e .          </li>
+07d0: 0a 20 20 20 20 20 20 20 20 20 20 3c 6c 69 0a 20 .          <li. 
+07e0: 20 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d            data-
+07f0: 69 64 3d 22 70 61 74 63 68 22 0a 20 20 20 20 20 id="patch".     
+0800: 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79 3d        data-key=
+0810: 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 20 20 20 "endpoint".     
+0820: 20 20 20 20 20 20 20 64 61 74 61 2d 68 74 74 70        data-http
+0830: 3d 22 70 61 74 63 68 22 0a 20 20 20 20 20 20 20 ="patch".       
+0840: 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20    >.           
+0850: 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20 20 20  <a.            
+0860: 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72 79 2d   data-key="try-
+0870: 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 20 link".          
+0880: 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20   >.            
+0890: 20 20 55 70 64 61 74 65 0a 20 20 20 20 20 20 20   Update.       
+08a0: 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20      </a>.      
+08b0: 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20     </li>.      
+08c0: 20 20 20 20 3c 6c 69 0a 20 20 20 20 20 20 20 20     <li.        
+08d0: 20 20 20 20 64 61 74 61 2d 69 64 3d 22 64 65 6c     data-id="del
+08e0: 65 74 65 22 0a 20 20 20 20 20 20 20 20 20 20 20 ete".           
+08f0: 20 64 61 74 61 2d 6b 65 79 3d 22 65 6e 64 70 6f  data-key="endpo
+0900: 69 6e 74 22 0a 20 20 20 20 20 20 20 20 20 20 20 int".           
+0910: 20 64 61 74 61 2d 68 74 74 70 3d 22 64 65 6c 65  data-http="dele
+0920: 74 65 22 0a 20 20 20 20 20 20 20 20 20 20 3e 0a te".          >.
+0930: 20 20 20 20 20 20 20 20 20 20 20 20 3c 61 0a 20             <a. 
+0940: 20 20 20 20 20 20 20 20 20 20 20 20 20 64 61 74              dat
+0950: 61 2d 6b 65 79 3d 22 74 72 79 2d 6c 69 6e 6b 22 a-key="try-link"
+0960: 0a 20 20 20 20 20 20 20 20 20 20 20 20 3e 0a 20 .            >. 
+0970: 20 20 20 20 20 20 20 20 20 20 20 20 20 44 65 6c              Del
+0980: 65 74 65 0a 20 20 20 20 20 20 20 20 20 20 20 20 ete.            
+0990: 3c 2f 61 3e 0a 20 20 20 20 20 20 20 20 20 20 3c </a>.          <
+09a0: 2f 6c 69 3e 0a 20 20 20 20 20 20 20 20 20 20 3c /li>.          <
+09b0: 6c 69 0a 20 20 20 20 20 20 20 20 20 20 20 20 64 li.            d
+09c0: 61 74 61 2d 69 64 3d 22 72 65 67 69 73 74 65 72 ata-id="register
+09d0: 2d 73 75 63 63 65 73 73 66 75 6c 22 0a 20 20 20 -successful".   
+09e0: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b 65          data-ke
+09f0: 79 3d 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 20 y="endpoint".   
+0a00: 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 68 74          data-ht
+0a10: 74 70 3d 22 70 6f 73 74 22 0a 20 20 20 20 20 20 tp="post".      
+0a20: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20     >.          
+0a30: 20 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20 20   <a.           
+0a40: 20 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72 79    data-key="try
+0a50: 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 20 -link".         
+0a60: 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20 20    >.           
+0a70: 20 20 20 52 65 67 69 73 74 65 72 20 2d 20 73 75    Register - su
+0a80: 63 63 65 73 73 66 75 6c 0a 20 20 20 20 20 20 20 ccessful.       
+0a90: 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20      </a>.      
+0aa0: 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20     </li>.      
+0ab0: 20 20 20 20 3c 6c 69 0a 20 20 20 20 20 20 20 20     <li.        
+0ac0: 20 20 20 20 64 61 74 61 2d 69 64 3d 22 72 65 67     data-id="reg
+0ad0: 69 73 74 65 72 2d 75 6e 73 75 63 63 65 73 73 66 ister-unsuccessf
+0ae0: 75 6c 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 ul".            
+0af0: 64 61 74 61 2d 6b 65 79 3d 22 65 6e 64 70 6f 69 data-key="endpoi
+0b00: 6e 74 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 nt".            
+0b10: 64 61 74 61 2d 68 74 74 70 3d 22 70 6f 73 74 22 data-http="post"
+0b20: 0a 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20 .          >.   
+0b30: 20 20 20 20 20 20 20 3c 61 0a 20 20 20 20 20 20        <a.      
+0b40: 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79 3d 22       data-key="
+0b50: 74 72 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 try-link".      
+0b60: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20     >.          
+0b70: 20 20 52 65 67 69 73 74 65 72 20 2d 20 75 6e 73   Register - uns
+0b80: 75 63 63 65 73 73 66 75 6c 0a 20 20 20 20 20 20 uccessful.      
+0b90: 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20 20     </a>.       
+0ba0: 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20 20    </li>.       
+0bb0: 20 20 20 3c 6c 69 0a 20 20 20 20 20 20 20 20 20    <li.         
+0bc0: 20 20 20 64 61 74 61 2d 69 64 3d 22 6c 6f 67 69    data-id="logi
+0bd0: 6e 2d 73 75 63 63 65 73 73 66 75 6c 22 0a 20 20 n-successful".  
+0be0: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 6b           data-k
+0bf0: 65 79 3d 22 65 6e 64 70 6f 69 6e 74 22 0a 20 20 ey="endpoint".  
+0c00: 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d 68           data-h
+0c10: 74 74 70 3d 22 70 6f 73 74 22 0a 20 20 20 20 20 ttp="post".     
+0c20: 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20      >.         
+0c30: 20 20 20 3c 61 0a 20 20 20 20 20 20 20 20 20 20    <a.          
+0c40: 20 20 20 20 64 61 74 61 2d 6b 65 79 3d 22 74 72     data-key="tr
+0c50: 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 20 20 y-link".        
+0c60: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20 20     >.          
+0c70: 20 20 20 20 4c 6f 67 69 6e 20 2d 20 73 75 63 63     Login - succ
+0c80: 65 73 73 66 75 6c 0a 20 20 20 20 20 20 20 20 20 essful.         
+0c90: 20 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20 20 20    </a>.        
+0ca0: 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20 20 20   </li>.        
+0cb0: 20 20 3c 6c 69 20 64 61 74 61 2d 69 64 3d 22 6c   <li data-id="l
+0cc0: 6f 67 69 6e 2d 75 6e 73 75 63 63 65 73 73 66 75 ogin-unsuccessfu
+0cd0: 6c 22 20 64 61 74 61 2d 6b 65 79 3d 22 65 6e 64 l" data-key="end
+0ce0: 70 6f 69 6e 74 22 20 64 61 74 61 2d 68 74 74 70 point" data-http
+0cf0: 3d 22 70 6f 73 74 22 3e 0a 20 20 20 20 20 20 20 ="post">.       
+0d00: 20 20 20 20 20 3c 61 0a 20 20 20 20 20 20 20 20      <a.        
+0d10: 20 20 20 20 20 20 64 61 74 61 2d 6b 65 79 3d 22       data-key="
+0d20: 74 72 79 2d 6c 69 6e 6b 22 0a 20 20 20 20 20 20 try-link".      
+0d30: 20 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20       >.        
+0d40: 20 20 20 20 20 20 4c 6f 67 69 6e 20 2d 20 75 6e       Login - un
+0d50: 73 75 63 63 65 73 73 66 75 6c 0a 20 20 20 20 20 successful.     
+0d60: 20 20 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20        </a>.    
+0d70: 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20       </li>.    
+0d80: 20 20 20 20 20 20 3c 6c 69 0a 20 20 20 20 20 20       <li.      
+0d90: 20 20 20 20 20 20 64 61 74 61 2d 69 64 3d 22 64       data-id="d
+0da0: 65 6c 61 79 22 0a 20 20 20 20 20 20 20 20 20 20 elay".          
+0db0: 20 20 64 61 74 61 2d 6b 65 79 3d 22 65 6e 64 70   data-key="endp
+0dc0: 6f 69 6e 74 22 0a 20 20 20 20 20 20 20 20 20 20 oint".          
+0dd0: 20 20 64 61 74 61 2d 68 74 74 70 3d 22 67 65 74   data-http="get
+0de0: 22 0a 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20 ".          >.  
+0df0: 20 20 20 20 20 20 20 20 20 20 3c 61 0a 20 20 20           <a.   
+0e00: 20 20 20 20 20 20 20 20 20 20 20 64 61 74 61 2d            data-
+0e10: 6b 65 79 3d 22 74 72 79 2d 6c 69 6e 6b 22 0a 20 key="try-link". 
+0e20: 20 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20            >.   
+0e30: 20 20 20 20 20 20 20 20 20 20 20 44 65 6c 61 79            Delay
+0e40: 65 64 20 72 65 73 70 6f 6e 73 65 0a 20 20 20 20 ed response.    
+0e50: 20 20 20 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20         </a>.   
+0e60: 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20        </li>.   
+0e70: 20 20 20 20 20 3c 2f 75 6c 3e 0a 20 20 20 20 20      </ul>.     
+0e80: 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 3c 21  </div>.      <!
+0e90: 2d 2d 0a 09 09 09 2d 2d 3e 0a 20 20 20 20 20 20 --....-->.      
+0ea0: 3c 64 69 76 20 63 6c 61 73 73 3d 22 6f 75 74 70 <div class="outp
+0eb0: 75 74 22 3e 0a 20 20 20 20 20 20 20 20 3c 64 69 ut">.        <di
+0ec0: 76 20 63 6c 61 73 73 3d 22 72 65 71 75 65 73 74 v class="request
+0ed0: 22 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 70 20 ">.          <p 
+0ee0: 63 6c 61 73 73 3d 22 72 65 71 75 65 73 74 2d 74 class="request-t
+0ef0: 69 74 6c 65 22 3e 0a 20 20 20 20 20 20 20 20 20 itle">.         
+0f00: 20 20 20 3c 73 74 72 6f 6e 67 0a 20 20 20 20 20    <strong.     
+0f10: 20 20 20 20 20 20 20 20 20 3e 52 65 71 75 65 73          >Reques
+0f20: 74 20 3c 69 20 63 6c 61 73 73 3d 22 66 61 20 66 t <i class="fa f
+0f30: 61 2d 61 72 72 6f 77 2d 63 69 72 63 6c 65 2d 75 a-arrow-circle-u
+0f40: 70 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 20 20 20 p"></i>.        
+0f50: 20 20 20 20 20 20 3c 61 0a 20 20 20 20 20 20 20       <a.       
+0f60: 20 20 20 20 20 20 20 20 20 63 6c 61 73 73 3d 22          class="
+0f70: 6c 69 6e 6b 20 74 72 79 2d 6c 69 6e 6b 22 0a 20 link try-link". 
+0f80: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 64                d
+0f90: 61 74 61 2d 6b 65 79 3d 22 72 65 71 75 65 73 74 ata-key="request
+0fa0: 2d 6f 75 74 70 75 74 2d 6c 69 6e 6b 22 0a 20 20 -output-link".  
+0fb0: 20 20 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20             >.  
+0fc0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 73               <s
+0fd0: 70 61 6e 20 63 6c 61 73 73 3d 22 75 72 6c 22 20 pan class="url" 
+0fe0: 64 61 74 61 2d 6b 65 79 3d 22 75 72 6c 22 3e 3c data-key="url"><
+0ff0: 2f 73 70 61 6e 3e 0a 20 20 20 20 20 20 20 20 20 /span>.         
+1000: 20 20 20 20 20 3c 2f 61 3e 0a 20 20 20 20 20 20      </a>.      
+1010: 20 20 20 20 20 20 3c 2f 73 74 72 6f 6e 67 3e 0a       </strong>.
+1020: 20 20 20 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20           </p>. 
+1030: 20 20 20 20 20 20 20 20 20 3c 70 72 65 20 64 61          <pre da
+1040: 74 61 2d 6b 65 79 3d 22 6f 75 74 70 75 74 2d 72 ta-key="output-r
+1050: 65 71 75 65 73 74 22 3e 3c 2f 70 72 65 3e 0a 20 equest"></pre>. 
+1060: 20 20 20 20 20 20 20 3c 2f 64 69 76 3e 0a 20 20        </div>.  
+1070: 20 20 20 20 20 20 3c 21 2d 2d 0a 09 09 09 09 2d       <!--.....-
+1080: 2d 3e 0a 20 20 20 20 20 20 20 20 3c 64 69 76 20 ->.        <div 
+1090: 63 6c 61 73 73 3d 22 72 65 73 70 6f 6e 73 65 22 class="response"
+10a0: 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 70 20 63 >.          <p c
+10b0: 6c 61 73 73 3d 22 72 65 73 70 6f 6e 73 65 2d 74 lass="response-t
+10c0: 69 74 6c 65 22 3e 0a 20 20 20 20 20 20 20 20 20 itle">.         
+10d0: 20 20 20 3c 73 74 72 6f 6e 67 0a 20 20 20 20 20    <strong.     
+10e0: 20 20 20 20 20 20 20 20 20 3e 52 65 73 70 6f 6e          >Respon
+10f0: 73 65 20 3c 69 20 63 6c 61 73 73 3d 22 66 61 20 se <i class="fa 
+1100: 66 61 2d 61 72 72 6f 77 2d 63 69 72 63 6c 65 2d fa-arrow-circle-
+1110: 64 6f 77 6e 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 down"></i>.     
+1120: 20 20 20 20 20 20 20 20 20 3c 73 70 61 6e 20 63          <span c
+1130: 6c 61 73 73 3d 22 72 65 73 70 6f 6e 73 65 2d 63 lass="response-c
+1140: 6f 64 65 22 20 64 61 74 61 2d 6b 65 79 3d 22 72 ode" data-key="r
+1150: 65 73 70 6f 6e 73 65 2d 63 6f 64 65 22 3e 3c 2f esponse-code"></
+1160: 73 70 61 6e 0a 20 20 20 20 20 20 20 20 20 20 20 span.           
+1170: 20 3e 3c 2f 73 74 72 6f 6e 67 3e 0a 20 20 20 20  ></strong>.    
+1180: 20 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20 20 20       </p>.     
+1190: 20 20 20 20 20 3c 64 69 76 20 64 61 74 61 2d 6b      <div data-k
+11a0: 65 79 3d 22 73 70 69 6e 6e 65 72 22 20 63 6c 61 ey="spinner" cla
+11b0: 73 73 3d 22 73 70 69 6e 6e 65 72 22 20 68 69 64 ss="spinner" hid
+11c0: 64 65 6e 3e 0a 20 20 20 20 20 20 20 20 20 20 20 den>.           
+11d0: 20 3c 64 69 76 20 63 6c 61 73 73 3d 22 63 75 62  <div class="cub
+11e0: 65 31 22 3e 3c 2f 64 69 76 3e 0a 20 20 20 20 20 e1"></div>.     
+11f0: 20 20 20 20 20 20 20 3c 64 69 76 20 63 6c 61 73        <div clas
+1200: 73 3d 22 63 75 62 65 32 22 3e 3c 2f 64 69 76 3e s="cube2"></div>
+1210: 0a 20 20 20 20 20 20 20 20 20 20 3c 2f 64 69 76 .          </div
+1220: 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 70 72 65 >.          <pre
+1230: 20 64 61 74 61 2d 6b 65 79 3d 22 6f 75 74 70 75  data-key="outpu
+1240: 74 2d 72 65 73 70 6f 6e 73 65 22 3e 3c 2f 70 72 t-response"></pr
+1250: 65 3e 0a 20 20 20 20 20 20 20 20 3c 2f 64 69 76 e>.        </div
+1260: 3e 0a 20 20 20 20 20 20 3c 2f 64 69 76 3e 0a 20 >.      </div>. 
+1270: 20 20 20 3c 2f 73 65 63 74 69 6f 6e 3e 0a 0a 20    </section>.. 
+1280: 20 20 20 3c 68 32 20 63 6c 61 73 73 3d 22 74 2d    <h2 class="t-
+1290: 63 65 6e 74 65 72 20 68 65 61 64 69 6e 67 22 3e center heading">
+12a0: 49 74 26 72 73 71 75 6f 3b 73 20 61 6c 6c 20 69 It&rsquo;s all i
+12b0: 6e 20 74 68 65 20 64 65 74 61 69 6c 73 3c 2f 68 n the details</h
+12c0: 32 3e 0a 20 20 20 20 3c 68 72 20 63 6c 61 73 73 2>.    <hr class
+12d0: 3d 22 64 61 72 6b 22 20 2f 3e 0a 20 20 20 20 3c ="dark" />.    <
+12e0: 73 65 63 74 69 6f 6e 20 63 6c 61 73 73 3d 22 74 section class="t
+12f0: 65 63 68 6e 69 63 61 6c 2d 62 69 74 73 22 20 69 echnical-bits" i
+1300: 64 3d 22 74 65 63 68 6e 69 63 61 6c 2d 62 69 74 d="technical-bit
+1310: 73 22 3e 0a 20 20 20 20 20 20 3c 75 6c 20 63 6c s">.      <ul cl
+1320: 61 73 73 3d 22 69 63 6f 6e 65 64 22 3e 0a 20 20 ass="iconed">.  
+1330: 20 20 20 20 20 20 3c 6c 69 3e 0a 20 20 20 20 20       <li>.     
+1340: 20 20 20 20 20 3c 69 20 63 6c 61 73 73 3d 22 66      <i class="f
+1350: 61 20 66 61 2d 63 6c 6f 75 64 22 3e 3c 2f 69 3e a fa-cloud"></i>
+1360: 0a 20 20 20 20 20 20 20 20 20 20 3c 70 3e 0a 20 .          <p>. 
+1370: 20 20 20 20 20 20 20 20 20 20 20 3c 73 74 72 6f            <stro
+1380: 6e 67 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 ng.             
+1390: 20 3e 48 6f 73 74 65 64 20 6f 6e 20 3c 61 20 68  >Hosted on <a h
+13a0: 72 65 66 3d 22 68 74 74 70 73 3a 2f 2f 77 77 77 ref="https://www
+13b0: 2e 68 65 72 6f 6b 75 2e 63 6f 6d 2f 22 3e 48 65 .heroku.com/">He
+13c0: 72 6f 6b 75 3c 2f 61 3e 3c 2f 73 74 72 6f 6e 67 roku</a></strong
+13d0: 0a 20 20 20 20 20 20 20 20 20 20 20 20 3e 0a 20 .            >. 
+13e0: 20 20 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20 20          </p>.  
+13f0: 20 20 20 20 20 20 20 20 3c 70 3e 0a 20 20 20 20         <p>.    
+1400: 20 20 20 20 20 20 20 20 57 68 69 63 68 20 6d 65         Which me
+1410: 61 6e 73 20 39 39 2e 39 39 25 20 55 70 74 69 6d ans 99.99% Uptim
+1420: 65 20 53 4c 41 2e 3c 62 72 20 2f 3e 41 6c 6c 20 e SLA.<br />All 
+1430: 79 6f 75 20 6e 65 65 64 20 69 73 20 74 68 65 20 you need is the 
+1440: 62 61 73 65 20 55 52 4c 2c 0a 20 20 20 20 20 20 base URL,.      
+1450: 20 20 20 20 20 20 61 6e 64 20 79 6f 75 27 72 65       and you're
+1460: 20 61 77 61 79 3a 20 3c 62 72 20 2f 3e 3c 62 72  away: <br /><br
+1470: 20 2f 3e 3c 73 70 61 6e 20 63 6c 61 73 73 3d 22  /><span class="
+1480: 63 6f 64 65 22 0a 20 20 20 20 20 20 20 20 20 20 code".          
+1490: 20 20 20 20 3e 68 74 74 70 73 3a 2f 2f 72 65 71     >https://req
+14a0: 72 65 73 2e 69 6e 2f 61 70 69 2f 3c 2f 73 70 61 res.in/api/</spa
+14b0: 6e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3e 3c n.            ><
+14c0: 62 72 20 2f 3e 3c 62 72 20 2f 3e 54 68 65 20 41 br /><br />The A
+14d0: 50 49 20 69 73 20 43 4f 52 53 20 65 6e 61 62 6c PI is CORS enabl
+14e0: 65 64 2c 20 73 6f 20 79 6f 75 20 63 61 6e 20 6d ed, so you can m
+14f0: 61 6b 65 20 72 65 71 75 65 73 74 73 20 72 69 67 ake requests rig
+1500: 68 74 0a 20 20 20 20 20 20 20 20 20 20 20 20 66 ht.            f
+1510: 72 6f 6d 20 74 68 65 20 62 72 6f 77 73 65 72 2c rom the browser,
+1520: 20 6e 6f 20 6d 61 74 74 65 72 20 77 68 61 74 20  no matter what 
+1530: 64 6f 6d 61 69 6e 2c 20 6f 72 20 65 76 65 6e 20 domain, or even 
+1540: 66 72 6f 6d 20 73 6f 6d 65 77 68 65 72 65 20 6c from somewhere l
+1550: 69 6b 65 0a 20 20 20 20 20 20 20 20 20 20 20 20 ike.            
+1560: 4a 53 46 69 64 64 6c 65 20 6f 72 20 4a 53 42 69 JSFiddle or JSBi
+1570: 6e 2e 0a 20 20 20 20 20 20 20 20 20 20 3c 2f 70 n..          </p
+1580: 3e 0a 20 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a >.        </li>.
+1590: 20 20 20 20 20 20 20 20 3c 6c 69 3e 0a 20 20 20         <li>.   
+15a0: 20 20 20 20 20 20 20 3c 69 20 63 6c 61 73 73 3d        <i class=
+15b0: 22 66 61 20 66 61 2d 66 69 6c 65 2d 63 6f 64 65 "fa fa-file-code
+15c0: 2d 6f 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 20 20 -o"></i>.       
+15d0: 20 20 20 3c 70 3e 3c 73 74 72 6f 6e 67 3e 4c 61    <p><strong>La
+15e0: 6e 67 75 61 67 65 20 61 67 6e 6f 73 74 69 63 3c nguage agnostic<
+15f0: 2f 73 74 72 6f 6e 67 3e 3c 2f 70 3e 0a 20 20 20 /strong></p>.   
+1600: 20 20 20 20 20 20 20 3c 70 3e 0a 20 20 20 20 20        <p>.     
+1610: 20 20 20 20 20 20 20 41 20 67 65 6e 65 72 69 63        A generic
+1620: 20 41 50 49 20 74 68 61 74 20 63 6f 6e 66 6f 72  API that confor
+1630: 6d 73 20 74 6f 20 52 45 53 54 20 70 72 69 6e 63 ms to REST princ
+1640: 69 70 6c 65 73 20 61 6e 64 20 61 63 63 65 70 74 iples and accept
+1650: 73 20 61 20 63 6f 6e 74 65 6e 74 0a 20 20 20 20 s a content.    
+1660: 20 20 20 20 20 20 20 20 74 79 70 65 20 6f 66 20         type of 
+1670: 3c 62 72 20 2f 3e 3c 62 72 20 2f 3e 3c 73 70 61 <br /><br /><spa
+1680: 6e 20 63 6c 61 73 73 3d 22 63 6f 64 65 22 3e 61 n class="code">a
+1690: 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 3c pplication/json<
+16a0: 2f 73 70 61 6e 0a 20 20 20 20 20 20 20 20 20 20 /span.          
+16b0: 20 20 3e 3c 62 72 20 2f 3e 3c 62 72 20 2f 3e 41   ><br /><br />A
+16c0: 6e 79 20 65 6e 64 70 6f 69 6e 74 20 74 68 61 74 ny endpoint that
+16d0: 20 63 6f 6e 74 61 69 6e 73 20 22 26 6c 74 3b 72  contains "&lt;r
+16e0: 65 73 6f 75 72 63 65 26 67 74 3b 22 20 63 61 6e esource&gt;" can
+16f0: 20 62 65 0a 20 20 20 20 20 20 20 20 20 20 20 20  be.            
+1700: 73 75 62 73 74 69 74 75 74 65 64 20 77 69 74 68 substituted with
+1710: 20 61 6e 79 74 68 69 6e 67 20 79 6f 75 20 73 75  anything you su
+1720: 70 70 6c 79 2c 20 69 65 2e 20 22 70 72 6f 64 75 pply, ie. "produ
+1730: 63 74 73 22 2c 20 22 61 63 63 6f 75 6e 74 73 22 cts", "accounts"
+1740: 2c 0a 20 20 20 20 20 20 20 20 20 20 20 20 65 74 ,.            et
+1750: 63 2e 2e 74 68 65 20 41 50 49 20 77 69 6c 6c 20 c..the API will 
+1760: 6a 75 73 74 20 72 65 73 70 6f 6e 64 20 77 69 74 just respond wit
+1770: 68 20 76 61 72 69 6f 75 73 20 50 61 6e 74 6f 6e h various Panton
+1780: 65 20 63 6f 6c 6f 75 72 73 2e 0a 20 20 20 20 20 e colours..     
+1790: 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20 20 20 20      </p>.      
+17a0: 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20 20 3c 2f   </li>.      </
+17b0: 75 6c 3e 0a 20 20 20 20 3c 2f 73 65 63 74 69 6f ul>.    </sectio
+17c0: 6e 3e 0a 0a 20 20 20 20 3c 68 32 20 63 6c 61 73 n>..    <h2 clas
+17d0: 73 3d 22 74 2d 63 65 6e 74 65 72 20 68 65 61 64 s="t-center head
+17e0: 69 6e 67 22 3e 47 65 74 74 69 6e 67 20 73 74 61 ing">Getting sta
+17f0: 72 74 65 64 3c 2f 68 32 3e 0a 20 20 20 20 3c 68 rted</h2>.    <h
+1800: 72 20 63 6c 61 73 73 3d 22 64 61 72 6b 22 20 2f r class="dark" /
+1810: 3e 0a 20 20 20 20 3c 73 65 63 74 69 6f 6e 20 63 >.    <section c
+1820: 6c 61 73 73 3d 22 67 65 74 74 69 6e 67 2d 73 74 lass="getting-st
+1830: 61 72 74 65 64 20 74 2d 63 65 6e 74 65 72 22 20 arted t-center" 
+1840: 69 64 3d 22 67 65 74 74 69 6e 67 2d 73 74 61 72 id="getting-star
+1850: 74 65 64 22 3e 0a 20 20 20 20 20 20 3c 69 20 63 ted">.      <i c
+1860: 6c 61 73 73 3d 22 66 61 20 66 61 2d 68 74 6d 6c lass="fa fa-html
+1870: 35 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 20 3c 64 5"></i>.      <d
+1880: 69 76 20 63 6c 61 73 73 3d 22 74 61 62 22 3e 0a iv class="tab">.
+1890: 20 20 20 20 20 20 20 20 3c 70 20 63 6c 61 73 73         <p class
+18a0: 3d 22 74 61 62 2d 74 69 74 6c 65 22 3e 6a 51 75 ="tab-title">jQu
+18b0: 65 72 79 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 ery</p>.        
+18c0: 3c 70 3e 49 66 20 79 6f 75 2c 20 66 6f 72 20 65 <p>If you, for e
+18d0: 78 61 6d 70 6c 65 2c 20 77 61 6e 74 20 74 6f 20 xample, want to 
+18e0: 63 72 65 61 74 65 20 61 20 66 61 6b 65 20 75 73 create a fake us
+18f0: 65 72 3a 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 er:</p>.        
+1900: 3c 70 72 65 3e 24 2e 61 6a 61 78 28 7b 0a 20 20 <pre>$.ajax({.  
+1910: 20 20 75 72 6c 3a 20 22 68 74 74 70 73 3a 2f 2f   url: "https://
+1920: 72 65 71 72 65 73 2e 69 6e 2f 61 70 69 2f 75 73 reqres.in/api/us
+1930: 65 72 73 22 2c 0a 20 20 20 20 74 79 70 65 3a 20 ers",.    type: 
+1940: 22 50 4f 53 54 22 2c 0a 20 20 20 20 64 61 74 61 "POST",.    data
+1950: 3a 20 7b 0a 20 20 20 20 20 20 20 20 6e 61 6d 65 : {.        name
+1960: 3a 20 22 70 61 75 6c 20 72 75 64 64 22 2c 0a 20 : "paul rudd",. 
+1970: 20 20 20 20 20 20 20 6d 6f 76 69 65 73 3a 20 5b        movies: [
+1980: 22 49 20 4c 6f 76 65 20 59 6f 75 20 4d 61 6e 22 "I Love You Man"
+1990: 2c 20 22 52 6f 6c 65 20 4d 6f 64 65 6c 73 22 5d , "Role Models"]
+19a0: 0a 20 20 20 20 7d 2c 0a 20 20 20 20 73 75 63 63 .    },.    succ
+19b0: 65 73 73 3a 20 66 75 6e 63 74 69 6f 6e 28 72 65 ess: function(re
+19c0: 73 70 6f 6e 73 65 29 7b 0a 20 20 20 20 20 20 20 sponse){.       
+19d0: 20 63 6f 6e 73 6f 6c 65 2e 6c 6f 67 28 72 65 73  console.log(res
+19e0: 70 6f 6e 73 65 29 3b 0a 20 20 20 20 7d 0a 7d 29 ponse);.    }.})
+19f0: 3b 0a 09 09 09 09 3c 2f 70 72 65 0a 20 20 20 20 ;.....</pre.    
+1a00: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 3c 70     >.        <p
+1a10: 3e 46 6f 72 20 77 68 69 63 68 20 74 68 65 20 72 >For which the r
+1a20: 65 73 70 6f 6e 73 65 20 74 6f 20 74 68 69 73 20 esponse to this 
+1a30: 72 65 71 75 65 73 74 20 77 69 6c 6c 20 62 65 2e request will be.
+1a40: 2e 2e 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 3c ..</p>.        <
+1a50: 70 72 65 3e 7b 0a 20 20 20 20 22 6e 61 6d 65 22 pre>{.    "name"
+1a60: 3a 22 70 61 75 6c 20 72 75 64 64 22 2c 0a 20 20 :"paul rudd",.  
+1a70: 20 20 22 6d 6f 76 69 65 73 5b 5d 22 3a 5b 0a 20   "movies[]":[. 
+1a80: 20 20 20 20 20 20 20 22 49 20 4c 6f 76 65 20 59        "I Love Y
+1a90: 6f 75 20 4d 61 6e 22 2c 0a 20 20 20 20 20 20 20 ou Man",.       
+1aa0: 20 22 52 6f 6c 65 20 4d 6f 64 65 6c 73 22 0a 20  "Role Models". 
+1ab0: 20 20 20 5d 2c 0a 20 20 20 20 22 69 64 22 3a 22    ],.    "id":"
+1ac0: 32 34 33 22 2c 0a 20 20 20 20 22 63 72 65 61 74 243",.    "creat
+1ad0: 65 64 41 74 22 3a 22 32 30 31 34 2d 31 30 2d 31 edAt":"2014-10-1
+1ae0: 38 54 31 32 3a 30 39 3a 30 35 2e 32 35 35 5a 22 8T12:09:05.255Z"
+1af0: 0a 7d 0a 09 09 09 09 3c 2f 70 72 65 0a 20 20 20 .}.....</pre.   
+1b00: 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 3c      >.        <
+1b10: 70 3e 0a 20 20 20 20 20 20 20 20 20 20 59 6f 75 p>.          You
+1b20: 20 63 61 6e 20 73 65 65 20 74 68 61 74 20 74 68  can see that th
+1b30: 65 20 41 50 49 20 68 61 73 20 73 65 6e 74 20 75 e API has sent u
+1b40: 73 20 62 61 63 6b 20 77 68 61 74 65 76 65 72 20 s back whatever 
+1b50: 75 73 65 72 20 64 65 74 61 69 6c 73 20 77 65 0a user details we.
+1b60: 20 20 20 20 20 20 20 20 20 20 73 65 6e 74 20 69           sent i
+1b70: 74 2c 20 70 6c 75 73 20 61 6e 20 3c 73 70 61 6e t, plus an <span
+1b80: 20 63 6c 61 73 73 3d 22 63 6f 64 65 22 3e 69 64  class="code">id
+1b90: 3c 2f 73 70 61 6e 3e 20 26 61 6d 70 3b 0a 20 20 </span> &amp;.  
+1ba0: 20 20 20 20 20 20 20 20 3c 73 70 61 6e 20 63 6c         <span cl
+1bb0: 61 73 73 3d 22 63 6f 64 65 22 3e 63 72 65 61 74 ass="code">creat
+1bc0: 65 64 41 74 3c 2f 73 70 61 6e 3e 20 6b 65 79 20 edAt</span> key 
+1bd0: 66 6f 72 20 6f 75 72 20 75 73 65 2e 0a 20 20 20 for our use..   
+1be0: 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20 20 20 20      </p>.      
+1bf0: 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 3c 21 2d </div>.      <!-
+1c00: 2d 0a 09 09 09 2d 2d 3e 0a 20 20 20 20 20 20 3c -....-->.      <
+1c10: 64 69 76 20 63 6c 61 73 73 3d 22 74 61 62 22 3e div class="tab">
+1c20: 0a 20 20 20 20 20 20 20 20 3c 70 20 63 6c 61 73 .        <p clas
+1c30: 73 3d 22 74 61 62 2d 74 69 74 6c 65 22 3e 4e 61 s="tab-title">Na
+1c40: 74 69 76 65 20 4a 61 76 61 53 63 72 69 70 74 3c tive JavaScript<
+1c50: 2f 70 3e 0a 20 20 20 20 20 20 20 20 3c 70 3e 0a /p>.        <p>.
+1c60: 20 20 20 20 20 20 20 20 20 20 49 66 20 79 6f 75           If you
+1c70: 27 76 65 20 61 6c 72 65 61 64 79 20 67 6f 74 20 've already got 
+1c80: 79 6f 75 72 20 6f 77 6e 20 61 70 70 6c 69 63 61 your own applica
+1c90: 74 69 6f 6e 20 65 6e 74 69 74 69 65 73 2c 20 69 tion entities, i
+1ca0: 65 2e 20 22 70 72 6f 64 75 63 74 73 22 2c 0a 20 e. "products",. 
+1cb0: 20 20 20 20 20 20 20 20 20 79 6f 75 20 63 61 6e          you can
+1cc0: 20 73 65 6e 64 20 74 68 65 6d 20 69 6e 20 74 68  send them in th
+1cd0: 65 20 65 6e 64 70 6f 69 6e 74 20 55 52 4c 2c 20 e endpoint URL, 
+1ce0: 6c 69 6b 65 20 73 6f 3a 0a 20 20 20 20 20 20 20 like so:.       
+1cf0: 20 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20 3c 70  </p>.        <p
+1d00: 72 65 3e 76 61 72 20 78 68 72 20 3d 20 6e 65 77 re>var xhr = new
+1d10: 20 58 4d 4c 48 74 74 70 52 65 71 75 65 73 74 28  XMLHttpRequest(
+1d20: 29 3b 0a 78 68 72 2e 6f 70 65 6e 28 22 47 45 54 );.xhr.open("GET
+1d30: 22 2c 20 22 68 74 74 70 73 3a 2f 2f 72 65 71 72 ", "https://reqr
+1d40: 65 73 2e 69 6e 2f 61 70 69 2f 70 72 6f 64 75 63 es.in/api/produc
+1d50: 74 73 2f 33 22 2c 20 74 72 75 65 29 3b 0a 78 68 ts/3", true);.xh
+1d60: 72 2e 6f 6e 6c 6f 61 64 20 3d 20 66 75 6e 63 74 r.onload = funct
+1d70: 69 6f 6e 28 29 7b 0a 20 20 20 20 63 6f 6e 73 6f ion(){.    conso
+1d80: 6c 65 2e 6c 6f 67 28 78 68 72 2e 72 65 73 70 6f le.log(xhr.respo
+1d90: 6e 73 65 54 65 78 74 29 3b 0a 7d 3b 0a 78 68 72 nseText);.};.xhr
+1da0: 2e 73 65 6e 64 28 29 3b 0a 09 09 09 09 3c 2f 70 .send();.....</p
+1db0: 72 65 0a 20 20 20 20 20 20 20 20 3e 0a 20 20 20 re.        >.   
+1dc0: 20 20 20 20 20 3c 70 3e 0a 20 20 20 20 20 20 20      <p>.       
+1dd0: 20 20 20 49 74 20 77 6f 75 6c 64 20 62 65 20 69    It would be i
+1de0: 6d 70 6f 73 73 69 62 6c 65 20 66 6f 72 20 52 65 mpossible for Re
+1df0: 71 72 65 73 20 74 6f 20 6b 6e 6f 77 20 79 6f 75 qres to know you
+1e00: 72 20 61 70 70 6c 69 63 61 74 69 6f 6e 20 64 61 r application da
+1e10: 74 61 2c 20 73 6f 0a 20 20 20 20 20 20 20 20 20 ta, so.         
+1e20: 20 74 68 65 20 41 50 49 20 77 69 6c 6c 20 72 65  the API will re
+1e30: 73 70 6f 6e 64 20 66 72 6f 6d 20 61 20 73 61 6d spond from a sam
+1e40: 70 6c 65 20 73 65 74 20 6f 66 20 50 61 6e 74 6f ple set of Panto
+1e50: 6e 65 20 63 6f 6c 6f 75 72 20 64 61 74 61 0a 20 ne colour data. 
+1e60: 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20 20        </p>.    
+1e70: 20 20 20 20 3c 70 72 65 3e 7b 0a 20 20 20 20 22     <pre>{.    "
+1e80: 64 61 74 61 22 3a 7b 0a 20 20 20 20 20 20 20 20 data":{.        
+1e90: 22 69 64 22 3a 33 2c 0a 20 20 20 20 20 20 20 20 "id":3,.        
+1ea0: 22 6e 61 6d 65 22 3a 22 74 72 75 65 20 72 65 64 "name":"true red
+1eb0: 22 2c 0a 20 20 20 20 20 20 20 20 22 79 65 61 72 ",.        "year
+1ec0: 22 3a 32 30 30 32 2c 0a 20 20 20 20 20 20 20 20 ":2002,.        
+1ed0: 22 70 61 6e 74 6f 6e 65 5f 76 61 6c 75 65 22 3a "pantone_value":
+1ee0: 22 31 39 2d 31 36 36 34 22 0a 20 20 20 20 7d 0a "19-1664".    }.
+1ef0: 7d 0a 09 09 09 09 3c 2f 70 72 65 0a 20 20 20 20 }.....</pre.    
+1f00: 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 3c 70     >.        <p
+1f10: 3e 0a 20 20 20 20 20 20 20 20 20 20 49 74 27 73 >.          It's
+1f20: 20 65 6e 74 69 72 65 6c 79 20 70 6f 73 73 69 62  entirely possib
+1f30: 6c 65 20 74 6f 20 67 65 74 20 73 61 6d 70 6c 65 le to get sample
+1f40: 20 64 61 74 61 20 69 6e 74 6f 20 79 6f 75 72 20  data into your 
+1f50: 69 6e 74 65 72 66 61 63 65 20 69 6e 0a 20 20 20 interface in.   
+1f60: 20 20 20 20 20 20 20 73 65 63 6f 6e 64 73 21 0a        seconds!.
+1f70: 20 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20         </p>.   
+1f80: 20 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20 3c 2f    </div>.    </
+1f90: 73 65 63 74 69 6f 6e 3e 0a 0a 20 20 20 20 3c 68 section>..    <h
+1fa0: 32 20 63 6c 61 73 73 3d 22 74 2d 63 65 6e 74 65 2 class="t-cente
+1fb0: 72 20 68 65 61 64 69 6e 67 22 3e 53 74 69 6c 6c r heading">Still
+1fc0: 20 64 6f 6e 27 74 20 72 65 61 6c 6c 79 20 67 65  don't really ge
+1fd0: 74 20 69 74 2e 2e 2e 3c 2f 68 32 3e 0a 20 20 20 t it...</h2>.   
+1fe0: 20 3c 68 72 20 63 6c 61 73 73 3d 22 64 61 72 6b  <hr class="dark
+1ff0: 22 20 2f 3e 0a 20 20 20 20 3c 73 65 63 74 69 6f " />.    <sectio
+2000: 6e 20 63 6c 61 73 73 3d 22 74 65 63 68 6e 69 63 n class="technic
+2010: 61 6c 2d 62 69 74 73 22 20 69 64 3d 22 74 65 63 al-bits" id="tec
+2020: 68 6e 69 63 61 6c 2d 62 69 74 73 22 3e 0a 20 20 hnical-bits">.  
+2030: 20 20 20 20 3c 75 6c 20 63 6c 61 73 73 3d 22 69     <ul class="i
+2040: 63 6f 6e 65 64 22 3e 0a 20 20 20 20 20 20 20 20 coned">.        
+2050: 3c 6c 69 3e 0a 20 20 20 20 20 20 20 20 20 20 3c <li>.          <
+2060: 69 20 63 6c 61 73 73 3d 22 66 61 20 66 61 2d 72 i class="fa fa-r
+2070: 6f 63 6b 65 74 22 3e 3c 2f 69 3e 0a 20 20 20 20 ocket"></i>.    
+2080: 20 20 20 20 20 20 3c 70 3e 0a 20 20 20 20 20 20       <p>.      
+2090: 20 20 20 20 20 20 3c 73 74 72 6f 6e 67 3e 52 65       <strong>Re
+20a0: 71 72 65 73 20 69 73 20 61 20 3c 65 6d 3e 72 65 qres is a <em>re
+20b0: 61 6c 3c 2f 65 6d 3e 20 41 50 49 3c 2f 73 74 72 al</em> API</str
+20c0: 6f 6e 67 3e 0a 20 20 20 20 20 20 20 20 20 20 3c ong>.          <
+20d0: 2f 70 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 70 /p>.          <p
+20e0: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 52 65 >.            Re
+20f0: 71 72 65 73 20 73 69 6d 75 6c 61 74 65 73 20 72 qres simulates r
+2100: 65 61 6c 20 61 70 70 6c 69 63 61 74 69 6f 6e 20 eal application 
+2110: 73 63 65 6e 61 72 69 6f 73 2e 20 49 66 20 79 6f scenarios. If yo
+2120: 75 20 77 61 6e 74 20 74 6f 20 74 65 73 74 20 61 u want to test a
+2130: 0a 20 20 20 20 20 20 20 20 20 20 20 20 75 73 65 .            use
+2140: 72 20 61 75 74 68 65 6e 74 69 63 61 74 69 6f 6e r authentication
+2150: 20 73 79 73 74 65 6d 2c 20 52 65 71 72 65 73 20  system, Reqres 
+2160: 77 69 6c 6c 20 72 65 73 70 6f 6e 64 20 74 6f 20 will respond to 
+2170: 61 20 73 75 63 63 65 73 73 66 75 6c 0a 20 20 20 a successful.   
+2180: 20 20 20 20 20 20 20 20 20 6c 6f 67 69 6e 2f 72          login/r
+2190: 65 67 69 73 74 65 72 20 72 65 71 75 65 73 74 20 egister request 
+21a0: 77 69 74 68 20 61 20 74 6f 6b 65 6e 20 66 6f 72 with a token for
+21b0: 20 79 6f 75 20 74 6f 20 69 64 65 6e 74 69 66 79  you to identify
+21c0: 20 61 20 73 61 6d 70 6c 65 0a 20 20 20 20 20 20  a sample.      
+21d0: 20 20 20 20 20 20 75 73 65 72 2c 20 6f 72 20 77       user, or w
+21e0: 69 74 68 20 61 20 34 30 33 20 66 6f 72 62 69 64 ith a 403 forbid
+21f0: 64 65 6e 20 72 65 73 70 6f 6e 73 65 20 74 6f 20 den response to 
+2200: 61 6e 20 75 6e 73 75 63 63 65 73 73 66 75 6c 0a an unsuccessful.
+2210: 20 20 20 20 20 20 20 20 20 20 20 20 6c 6f 67 69             logi
+2220: 6e 2f 72 65 67 69 73 74 72 61 74 69 6f 6e 20 61 n/registration a
+2230: 74 74 65 6d 70 74 2e 20 3c 62 72 20 2f 3e 3c 62 ttempt. <br /><b
+2240: 72 20 2f 3e 41 20 63 6f 6d 6d 6f 6e 20 66 72 6f r />A common fro
+2250: 6e 74 2d 65 6e 64 20 73 63 65 6e 61 72 69 6f 0a nt-end scenario.
+2260: 20 20 20 20 20 20 20 20 20 20 20 20 74 68 61 74             that
+2270: 27 73 20 65 61 73 69 6c 79 20 66 6f 72 67 6f 74 's easily forgot
+2280: 74 65 6e 20 69 73 20 6c 6f 61 64 69 6e 67 20 73 ten is loading s
+2290: 74 61 74 65 73 2c 20 77 68 69 63 68 20 63 61 6e tates, which can
+22a0: 20 62 65 20 65 61 73 69 6c 79 0a 20 20 20 20 20  be easily.     
+22b0: 20 20 20 20 20 20 20 73 69 6d 75 6c 61 74 65 64        simulated
+22c0: 20 74 68 72 6f 75 67 68 20 52 65 71 72 65 73 20  through Reqres 
+22d0: 62 79 20 61 70 70 65 6e 64 69 6e 67 20 3c 62 72 by appending <br
+22e0: 20 2f 3e 3c 73 70 61 6e 20 63 6c 61 73 73 3d 22  /><span class="
+22f0: 63 6f 64 65 22 0a 20 20 20 20 20 20 20 20 20 20 code".          
+2300: 20 20 20 20 3e 3f 64 65 6c 61 79 3d 26 6c 74 3b     >?delay=&lt;
+2310: 61 20 6e 75 6d 62 65 72 20 6f 66 20 73 65 63 6f a number of seco
+2320: 6e 64 73 26 67 74 3b 3c 2f 73 70 61 6e 0a 20 20 nds&gt;</span.  
+2330: 20 20 20 20 20 20 20 20 20 20 3e 0a 20 20 20 20           >.    
+2340: 20 20 20 20 20 20 20 20 74 6f 20 61 6e 79 20 65         to any e
+2350: 6e 64 70 6f 69 6e 74 20 55 52 4c 2c 20 77 68 69 ndpoint URL, whi
+2360: 63 68 20 77 69 6c 6c 20 64 65 6c 61 79 20 74 68 ch will delay th
+2370: 65 20 41 50 49 20 72 65 73 70 6f 6e 73 65 20 74 e API response t
+2380: 69 6d 65 2e 0a 20 20 20 20 20 20 20 20 20 20 20 ime..           
+2390: 20 41 6e 69 6d 61 74 65 64 20 6c 6f 61 64 69 6e  Animated loadin
+23a0: 67 20 47 49 46 73 20 26 61 6d 70 3b 20 53 56 47 g GIFs &amp; SVG
+23b0: 73 20 61 74 20 74 68 65 20 72 65 61 64 79 21 0a s at the ready!.
+23c0: 20 20 20 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20           </p>. 
+23d0: 20 20 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20        </li>.   
+23e0: 20 20 20 20 20 3c 6c 69 3e 0a 20 20 20 20 20 20      <li>.      
+23f0: 20 20 20 20 3c 69 20 63 6c 61 73 73 3d 22 66 61     <i class="fa
+2400: 20 66 61 2d 62 6f 6c 74 22 3e 3c 2f 69 3e 0a 20  fa-bolt"></i>. 
+2410: 20 20 20 20 20 20 20 20 20 3c 70 3e 3c 73 74 72          <p><str
+2420: 6f 6e 67 3e 54 65 63 68 6e 69 63 61 6c 20 64 65 ong>Technical de
+2430: 6d 6f 73 20 61 6e 64 20 74 75 74 6f 72 69 61 6c mos and tutorial
+2440: 73 3c 2f 73 74 72 6f 6e 67 3e 3c 2f 70 3e 0a 20 s</strong></p>. 
+2450: 20 20 20 20 20 20 20 20 20 3c 70 3e 0a 20 20 20          <p>.   
+2460: 20 20 20 20 20 20 20 20 20 49 66 20 79 6f 75 27          If you'
+2470: 72 65 20 74 72 79 69 6e 67 20 74 6f 20 64 65 6d re trying to dem
+2480: 6f 6e 73 74 72 61 74 65 20 61 20 66 72 6f 6e 74 onstrate a front
+2490: 2d 65 6e 64 20 28 4a 61 76 61 53 63 72 69 70 74 -end (JavaScript
+24a0: 2d 62 61 73 65 64 29 0a 20 20 20 20 20 20 20 20 -based).        
+24b0: 20 20 20 20 63 6f 6e 63 65 70 74 2c 20 79 6f 75     concept, you
+24c0: 20 64 6f 6e 27 74 20 72 65 61 6c 6c 79 20 77 61  don't really wa
+24d0: 6e 74 20 74 68 65 20 68 61 73 73 6c 65 20 6f 66 nt the hassle of
+24e0: 20 73 65 74 74 69 6e 67 20 75 70 20 61 6e 20 41  setting up an A
+24f0: 50 49 2c 20 6f 72 0a 20 20 20 20 20 20 20 20 20 PI, or.         
+2500: 20 20 20 65 76 65 6e 20 61 20 73 65 72 76 65 72    even a server
+2510: 20 28 65 73 70 65 63 69 61 6c 6c 79 20 64 75 72  (especially dur
+2520: 69 6e 67 20 61 20 6c 69 76 65 20 77 6f 72 6b 73 ing a live works
+2530: 68 6f 70 20 6f 72 20 64 65 6d 6f 29 2e 3c 62 72 hop or demo).<br
+2540: 20 2f 3e 3c 62 72 20 2f 3e 0a 20 20 20 20 20 20  /><br />.      
+2550: 20 20 20 20 20 20 59 6f 75 20 63 61 6e 20 6a 75       You can ju
+2560: 73 74 20 77 72 69 74 65 20 79 6f 75 72 20 48 54 st write your HT
+2570: 4d 4c 2c 20 43 53 53 20 26 61 6d 70 3b 20 4a 61 ML, CSS &amp; Ja
+2580: 76 61 53 63 72 69 70 74 20 61 73 20 75 73 75 61 vaScript as usua
+2590: 6c 20 61 6e 64 20 73 65 6e 64 0a 20 20 20 20 20 l and send.     
+25a0: 20 20 20 20 20 20 20 52 65 71 72 65 73 20 41 4a        Reqres AJ
+25b0: 41 58 20 72 65 71 75 65 73 74 73 2c 20 77 68 69 AX requests, whi
+25c0: 63 68 20 77 69 6c 6c 20 72 65 73 70 6f 6e 64 20 ch will respond 
+25d0: 77 69 74 68 20 74 68 65 20 65 78 70 65 63 74 65 with the expecte
+25e0: 64 20 72 65 73 70 6f 6e 73 65 0a 20 20 20 20 20 d response.     
+25f0: 20 20 20 20 20 20 20 63 6f 64 65 73 20 61 6e 64        codes and
+2600: 20 6f 75 74 70 75 74 2e 0a 20 20 20 20 20 20 20  output..       
+2610: 20 20 20 3c 2f 70 3e 0a 20 20 20 20 20 20 20 20    </p>.        
+2620: 3c 2f 6c 69 3e 0a 0a 20 20 20 20 20 20 20 20 3c </li>..        <
+2630: 6c 69 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 69 li>.          <i
+2640: 20 63 6c 61 73 73 3d 22 66 61 20 66 61 2d 66 69  class="fa fa-fi
+2650: 6c 65 2d 63 6f 64 65 2d 6f 22 3e 3c 2f 69 3e 0a le-code-o"></i>.
+2660: 20 20 20 20 20 20 20 20 20 20 3c 70 3e 3c 73 74           <p><st
+2670: 72 6f 6e 67 3e 52 61 70 69 64 20 70 72 6f 74 6f rong>Rapid proto
+2680: 74 79 70 69 6e 67 20 6f 66 20 69 6e 74 65 72 66 typing of interf
+2690: 61 63 65 73 3c 2f 73 74 72 6f 6e 67 3e 3c 2f 70 aces</strong></p
+26a0: 3e 0a 20 20 20 20 20 20 20 20 20 20 3c 70 3e 0a >.          <p>.
+26b0: 20 20 20 20 20 20 20 20 20 20 20 20 57 68 65 6e             When
+26c0: 20 70 72 6f 74 6f 74 79 70 69 6e 67 20 61 20 6e  prototyping a n
+26d0: 65 77 20 69 6e 74 65 72 66 61 63 65 2c 20 79 6f ew interface, yo
+26e0: 75 20 6a 75 73 74 20 77 61 6e 74 20 61 6e 20 41 u just want an A
+26f0: 50 49 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c PI.            <
+2700: 65 6d 3e 74 68 65 72 65 3c 2f 65 6d 3e 2c 20 77 em>there</em>, w
+2710: 69 74 68 20 6d 69 6e 69 6d 61 6c 20 73 65 74 75 ith minimal setu
+2720: 70 20 65 66 66 6f 72 74 20 69 6e 76 6f 6c 76 65 p effort involve
+2730: 64 2e 20 4e 6f 72 6d 61 6c 6c 79 2c 20 49 27 64 d. Normally, I'd
+2740: 0a 20 20 20 20 20 20 20 20 20 20 20 20 70 6f 69 .            poi
+2750: 6e 74 20 70 65 6f 70 6c 65 2c 20 77 68 6f 20 61 nt people, who a
+2760: 72 65 6e 27 74 20 74 6f 6f 20 66 61 6d 69 6c 69 ren't too famili
+2770: 61 72 20 77 69 74 68 20 62 61 63 6b 65 6e 64 20 ar with backend 
+2780: 70 72 6f 67 72 61 6d 6d 69 6e 67 2c 20 74 6f 0a programming, to.
+2790: 20 20 20 20 20 20 20 20 20 20 20 20 3c 61 20 68             <a h
+27a0: 72 65 66 3d 22 68 74 74 70 3a 2f 2f 73 61 69 6c ref="http://sail
+27b0: 73 6a 73 2e 6f 72 67 22 3e 53 61 69 6c 73 6a 73 sjs.org">Sailsjs
+27c0: 3c 2f 61 3e 20 77 68 69 63 68 20 63 61 6e 20 61 </a> which can a
+27d0: 75 74 6f 2d 67 65 6e 65 72 61 74 65 20 61 0a 20 uto-generate a. 
+27e0: 20 20 20 20 20 20 20 20 20 20 20 52 45 53 54 2d            REST-
+27f0: 41 50 49 20 66 6f 72 20 79 6f 75 20 66 72 6f 6d API for you from
+2800: 20 74 68 65 20 63 6f 6d 6d 61 6e 64 20 6c 69 6e  the command lin
+2810: 65 2e 3c 62 72 20 2f 3e 3c 62 72 20 2f 3e 0a 20 e.<br /><br />. 
+2820: 20 20 20 20 20 20 20 20 20 20 20 48 6f 77 65 76            Howev
+2830: 65 72 2c 20 79 6f 75 20 77 69 6c 6c 20 6e 65 65 er, you will nee
+2840: 64 20 4e 6f 64 65 2e 6a 73 20 69 6e 73 74 61 6c d Node.js instal
+2850: 6c 65 64 20 61 6e 64 20 73 6f 6d 65 20 66 61 6d led and some fam
+2860: 69 6c 69 61 72 69 74 79 20 6f 66 20 68 6f 77 0a iliarity of how.
+2870: 20 20 20 20 20 20 20 20 20 20 20 20 4e 6f 64 65             Node
+2880: 2e 6a 73 20 77 6f 72 6b 73 2e 20 49 66 20 74 68 .js works. If th
+2890: 61 74 20 73 6f 75 6e 64 73 20 6c 69 6b 65 20 74 at sounds like t
+28a0: 6f 6f 20 6d 75 63 68 20 68 61 73 73 6c 65 20 61 oo much hassle a
+28b0: 6e 64 20 77 61 79 20 74 6f 6f 0a 20 20 20 20 20 nd way too.     
+28c0: 20 20 20 20 20 20 20 64 61 75 6e 74 69 6e 67 2c        daunting,
+28d0: 20 52 65 71 72 65 73 20 69 73 20 6a 75 73 74 20  Reqres is just 
+28e0: 61 20 55 52 4c 2e 20 53 65 6e 64 69 6e 67 20 69 a URL. Sending i
+28f0: 74 20 61 6e 20 41 4a 41 58 20 72 65 71 75 65 73 t an AJAX reques
+2900: 74 20 69 73 20 73 74 65 70 0a 20 20 20 20 20 20 t is step.      
+2910: 20 20 20 20 20 20 31 2e 2e 2e 74 68 65 72 65 20       1...there 
+2920: 69 73 20 6e 6f 20 73 74 65 70 20 32 2e 0a 20 20 is no step 2..  
+2930: 20 20 20 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20         </p>.   
+2940: 20 20 20 20 20 3c 2f 6c 69 3e 0a 20 20 20 20 20      </li>.     
+2950: 20 3c 2f 75 6c 3e 0a 20 20 20 20 3c 2f 73 65 63  </ul>.    </sec
+2960: 74 69 6f 6e 3e 0a 0a 20 20 20 20 3c 68 32 20 63 tion>..    <h2 c
+2970: 6c 61 73 73 3d 22 74 2d 63 65 6e 74 65 72 20 68 lass="t-center h
+2980: 65 61 64 69 6e 67 22 3e 50 65 61 63 65 20 6f 66 eading">Peace of
+2990: 20 6d 69 6e 64 3c 2f 68 32 3e 0a 20 20 20 20 3c  mind</h2>.    <
+29a0: 68 72 20 63 6c 61 73 73 3d 22 64 61 72 6b 22 20 hr class="dark" 
+29b0: 2f 3e 0a 20 20 20 20 3c 73 65 63 74 69 6f 6e 20 />.    <section 
+29c0: 63 6c 61 73 73 3d 22 70 65 61 63 65 2d 6f 66 2d class="peace-of-
+29d0: 6d 69 6e 64 22 20 69 64 3d 22 70 65 61 63 65 2d mind" id="peace-
+29e0: 6f 66 2d 6d 69 6e 64 22 3e 0a 20 20 20 20 20 20 of-mind">.      
+29f0: 3c 69 20 63 6c 61 73 73 3d 22 66 61 20 66 61 2d <i class="fa fa-
+2a00: 6c 6f 63 6b 22 3e 3c 2f 69 3e 0a 20 20 20 20 20 lock"></i>.     
+2a10: 20 3c 70 3e 0a 20 20 20 20 20 20 20 20 49 74 20  <p>.        It 
+2a20: 6d 69 67 68 74 20 73 65 65 6d 20 3c 73 74 72 6f might seem <stro
+2a30: 6e 67 3e 70 72 65 74 74 79 20 77 65 69 72 64 3c ng>pretty weird<
+2a40: 2f 73 74 72 6f 6e 67 3e 20 74 6f 20 62 65 20 73 /strong> to be s
+2a50: 65 6e 64 69 6e 67 20 79 6f 75 72 20 64 61 74 61 ending your data
+2a60: 20 74 6f 20 61 0a 20 20 20 20 20 20 20 20 33 72  to a.        3r
+2a70: 64 20 70 61 72 74 79 20 41 50 49 2c 20 62 75 74 d party API, but
+2a80: 20 49 20 63 61 6e 20 61 73 73 75 72 65 20 79 6f  I can assure yo
+2a90: 75 2c 20 52 65 71 72 65 73 0a 20 20 20 20 20 20 u, Reqres.      
+2aa0: 20 20 3c 73 74 72 6f 6e 67 3e 64 6f 65 73 20 6e   <strong>does n
+2ab0: 6f 74 20 73 74 6f 72 65 20 61 6e 79 20 6f 66 20 ot store any of 
+2ac0: 79 6f 75 72 20 64 61 74 61 3c 2f 73 74 72 6f 6e your data</stron
+2ad0: 67 3e 20 61 74 20 61 6c 6c 2e 20 4f 6e 63 65 20 g> at all. Once 
+2ae0: 79 6f 75 20 73 65 6e 64 0a 20 20 20 20 20 20 20 you send.       
+2af0: 20 69 74 20 74 6f 20 75 73 2c 20 77 65 20 6a 75  it to us, we ju
+2b00: 73 74 20 73 65 6e 64 20 69 74 20 73 74 72 61 69 st send it strai
+2b10: 67 68 74 20 62 61 63 6b 2e 2e 2e 61 6e 64 20 74 ght back...and t
+2b20: 68 65 6e 20 69 74 27 73 20 67 6f 6e 65 21 0a 20 hen it's gone!. 
+2b30: 20 20 20 20 20 3c 2f 70 3e 0a 20 20 20 20 3c 2f      </p>.    </
+2b40: 73 65 63 74 69 6f 6e 3e 0a 0a 20 20 20 20 20 3c section>..     <
+2b50: 68 32 20 63 6c 61 73 73 3d 22 74 2d 63 65 6e 74 h2 class="t-cent
+2b60: 65 72 20 68 65 61 64 69 6e 67 22 3e 41 64 76 65 er heading">Adve
+2b70: 72 74 69 73 69 6e 67 3c 2f 68 32 3e 0a 20 20 20 rtising</h2>.   
+2b80: 20 3c 68 72 20 63 6c 61 73 73 3d 22 64 61 72 6b  <hr class="dark
+2b90: 22 20 2f 3e 0a 20 20 20 20 3c 73 65 63 74 69 6f " />.    <sectio
+2ba0: 6e 20 63 6c 61 73 73 3d 22 70 72 6f 22 20 69 64 n class="pro" id
+2bb0: 3d 22 70 72 6f 22 3e 0a 20 20 20 20 20 20 3c 70 ="pro">.      <p
+2bc0: 3e 44 6f 20 79 6f 75 20 77 61 6e 74 20 74 6f 20 >Do you want to 
+2bd0: 61 64 76 65 72 74 69 73 65 20 79 6f 75 72 20 6a advertise your j
+2be0: 6f 62 73 2f 74 6f 6f 6c 73 2f 73 6f 66 74 77 61 obs/tools/softwa
+2bf0: 72 65 2f 63 61 74 73 20 74 68 72 6f 75 67 68 20 re/cats through 
+2c00: 52 65 71 72 65 73 20 74 6f 20 6d 69 6c 6c 69 6f Reqres to millio
+2c10: 6e 73 20 6f 66 20 64 65 76 65 6c 6f 70 65 72 73 ns of developers
+2c20: 20 65 76 65 72 79 20 77 65 65 6b 3f 0a 20 20 20  every week?.   
+2c30: 20 20 20 43 6c 69 63 6b 20 66 6f 72 20 6d 6f 72    Click for mor
+2c40: 65 20 3c 61 20 68 72 65 66 3d 22 68 74 74 70 73 e <a href="https
+2c50: 3a 2f 2f 77 77 77 2e 64 72 6f 70 62 6f 78 2e 63 ://www.dropbox.c
+2c60: 6f 6d 2f 73 2f 32 77 37 67 61 65 79 64 78 30 32 om/s/2w7gaeydx02
+2c70: 71 73 34 30 2f 52 65 71 72 65 73 5f 41 64 76 65 qs40/Reqres_Adve
+2c80: 72 74 69 73 69 6e 67 5f 50 72 6f 70 6f 73 61 6c rtising_Proposal
+2c90: 2e 70 64 66 3f 64 6c 3d 30 22 3e 69 6e 66 6f 20 .pdf?dl=0">info 
+2ca0: 5b 70 64 66 5d 3c 2f 61 3e 20 6f 6e 20 74 68 65 [pdf]</a> on the
+2cb0: 20 61 64 73 2e 0a 20 20 20 20 20 20 3c 61 20 68  ads..      <a h
+2cc0: 72 65 66 3d 22 2f 63 64 6e 2d 63 67 69 2f 6c 2f ref="/cdn-cgi/l/
+2cd0: 65 6d 61 69 6c 2d 70 72 6f 74 65 63 74 69 6f 6e email-protection
+2ce0: 23 32 31 34 39 34 34 34 64 34 64 34 65 36 31 34 #2149444d4d4e614
+2cf0: 33 34 34 34 66 34 39 34 65 35 36 34 35 34 64 34 3444f494e56454d4
+2d00: 34 30 66 34 38 34 63 22 3e 43 6f 6e 74 61 63 74 40f484c">Contact
+2d10: 3c 2f 61 3e 20 66 6f 72 20 70 72 69 63 69 6e 67 </a> for pricing
+2d20: 20 61 6e 64 20 71 75 65 73 74 69 6f 6e 73 2e 3c  and questions.<
+2d30: 2f 70 3e 0a 20 20 20 20 3c 2f 73 65 63 74 69 6f /p>.    </sectio
+2d40: 6e 3e 0a 0a 20 20 20 20 3c 68 32 20 63 6c 61 73 n>..    <h2 clas
+2d50: 73 3d 22 74 2d 63 65 6e 74 65 72 20 68 65 61 64 s="t-center head
+2d60: 69 6e 67 22 3e 4c 6f 6f 6b 69 6e 67 20 66 6f 72 ing">Looking for
+2d70: 20 70 72 6f 20 66 65 61 74 75 72 65 73 3f 3c 2f  pro features?</
+2d80: 68 32 3e 0a 20 20 20 20 3c 68 72 20 63 6c 61 73 h2>.    <hr clas
+2d90: 73 3d 22 64 61 72 6b 22 20 2f 3e 0a 20 20 20 20 s="dark" />.    
+2da0: 3c 73 65 63 74 69 6f 6e 20 63 6c 61 73 73 3d 22 <section class="
+2db0: 70 72 6f 22 20 69 64 3d 22 70 72 6f 22 3e 0a 20 pro" id="pro">. 
+2dc0: 20 20 20 20 20 3c 62 75 74 74 6f 6e 20 69 64 3d      <button id=
+2dd0: 22 74 72 69 67 67 65 72 2d 70 72 6f 22 20 63 6c "trigger-pro" cl
+2de0: 61 73 73 3d 22 6c 61 72 67 65 22 3e 55 70 67 72 ass="large">Upgr
+2df0: 61 64 65 3c 2f 62 75 74 74 6f 6e 3e 0a 0a 20 20 ade</button>..  
+2e00: 20 20 20 20 3c 64 69 76 20 69 64 3d 22 70 72 6f     <div id="pro
+2e10: 2d 66 6f 72 6d 22 20 63 6c 61 73 73 3d 22 70 72 -form" class="pr
+2e20: 6f 2d 66 6f 72 6d 22 3e 0a 20 20 20 20 20 20 20 o-form">.       
+2e30: 20 3c 68 33 3e 0a 20 20 20 20 20 20 20 20 20 20  <h3>.          
+2e40: 3c 73 74 72 6f 6e 67 3e 41 63 65 2e 3c 2f 73 74 <strong>Ace.</st
+2e50: 72 6f 6e 67 3e 20 50 72 6f 20 66 65 61 74 75 72 rong> Pro featur
+2e60: 65 73 20 63 6f 6d 69 6e 67 20 72 65 61 6c 20 73 es coming real s
+2e70: 6f 6f 6e 2e 20 53 74 69 63 6b 20 79 6f 75 72 20 oon. Stick your 
+2e80: 65 6d 61 69 6c 0a 20 20 20 20 20 20 20 20 20 20 email.          
+2e90: 69 6e 20 68 65 72 65 20 74 6f 20 62 65 20 6e 6f in here to be no
+2ea0: 74 69 66 69 65 64 20 61 6e 64 20 68 65 6c 70 20 tified and help 
+2eb0: 62 75 69 6c 64 20 6f 75 72 20 70 72 6f 20 74 69 build our pro ti
+2ec0: 65 72 2e 0a 20 20 20 20 20 20 20 20 3c 2f 68 33 er..        </h3
+2ed0: 3e 0a 20 20 20 20 20 20 20 20 3c 21 2d 2d 20 42 >.        <!-- B
+2ee0: 65 67 69 6e 20 4d 61 69 6c 63 68 69 6d 70 20 53 egin Mailchimp S
+2ef0: 69 67 6e 75 70 20 46 6f 72 6d 20 2d 2d 3e 0a 20 ignup Form -->. 
+2f00: 20 20 20 20 20 20 20 3c 6c 69 6e 6b 0a 20 20 20        <link.   
+2f10: 20 20 20 20 20 20 20 68 72 65 66 3d 22 2f 2f 63        href="//c
+2f20: 64 6e 2d 69 6d 61 67 65 73 2e 6d 61 69 6c 63 68 dn-images.mailch
+2f30: 69 6d 70 2e 63 6f 6d 2f 65 6d 62 65 64 63 6f 64 imp.com/embedcod
+2f40: 65 2f 63 6c 61 73 73 69 63 2d 31 30 5f 37 2e 63 e/classic-10_7.c
+2f50: 73 73 22 0a 20 20 20 20 20 20 20 20 20 20 72 65 ss".          re
+2f60: 6c 3d 22 73 74 79 6c 65 73 68 65 65 74 22 0a 20 l="stylesheet". 
+2f70: 20 20 20 20 20 20 20 20 20 74 79 70 65 3d 22 74          type="t
+2f80: 65 78 74 2f 63 73 73 22 0a 20 20 20 20 20 20 20 ext/css".       
+2f90: 20 2f 3e 0a 20 20 20 20 20 20 20 20 3c 64 69 76  />.        <div
+2fa0: 20 69 64 3d 22 6d 63 5f 65 6d 62 65 64 5f 73 69  id="mc_embed_si
+2fb0: 67 6e 75 70 22 3e 0a 20 20 20 20 20 20 20 20 20 gnup">.         
+2fc0: 20 3c 66 6f 72 6d 0a 20 20 20 20 20 20 20 20 20  <form.         
+2fd0: 20 20 20 61 63 74 69 6f 6e 3d 22 68 74 74 70 73    action="https
+2fe0: 3a 2f 2f 62 65 6e 68 6f 77 64 6c 65 2e 75 73 32 ://benhowdle.us2
+2ff0: 30 2e 6c 69 73 74 2d 6d 61 6e 61 67 65 2e 63 6f 0.list-manage.co
+3000: 6d 2f 73 75 62 73 63 72 69 62 65 2f 70 6f 73 74 m/subscribe/post
+3010: 3f 75 3d 38 63 35 38 31 36 35 37 34 39 33 31 38 ?u=8c58165749318
+3020: 35 34 35 61 38 39 63 64 31 62 32 31 26 61 6d 70 545a89cd1b21&amp
+3030: 3b 69 64 3d 35 34 34 66 32 37 38 34 36 39 22 0a ;id=544f278469".
+3040: 20 20 20 20 20 20 20 20 20 20 20 20 6d 65 74 68             meth
+3050: 6f 64 3d 22 70 6f 73 74 22 0a 20 20 20 20 20 20 od="post".      
+3060: 20 20 20 20 20 20 69 64 3d 22 6d 63 2d 65 6d 62       id="mc-emb
+3070: 65 64 64 65 64 2d 73 75 62 73 63 72 69 62 65 2d edded-subscribe-
+3080: 66 6f 72 6d 22 0a 20 20 20 20 20 20 20 20 20 20 form".          
+3090: 20 20 6e 61 6d 65 3d 22 6d 63 2d 65 6d 62 65 64   name="mc-embed
+30a0: 64 65 64 2d 73 75 62 73 63 72 69 62 65 2d 66 6f ded-subscribe-fo
+30b0: 72 6d 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 rm".            
+30c0: 63 6c 61 73 73 3d 22 76 61 6c 69 64 61 74 65 22 class="validate"
+30d0: 0a 20 20 20 20 20 20 20 20 20 20 20 20 74 61 72 .            tar
+30e0: 67 65 74 3d 22 5f 62 6c 61 6e 6b 22 0a 20 20 20 get="_blank".   
+30f0: 20 20 20 20 20 20 20 20 20 6e 6f 76 61 6c 69 64          novalid
+3100: 61 74 65 0a 20 20 20 20 20 20 20 20 20 20 3e 0a ate.          >.
+3110: 20 20 20 20 20 20 20 20 20 20 20 20 3c 64 69 76             <div
+3120: 20 69 64 3d 22 6d 63 5f 65 6d 62 65 64 5f 73 69  id="mc_embed_si
+3130: 67 6e 75 70 5f 73 63 72 6f 6c 6c 22 3e 0a 20 20 gnup_scroll">.  
+3140: 20 20 20 20 20 20 20 20 20 20 20 20 3c 64 69 76             <div
+3150: 20 63 6c 61 73 73 3d 22 6d 63 2d 66 69 65 6c 64  class="mc-field
+3160: 2d 67 72 6f 75 70 22 3e 0a 20 20 20 20 20 20 20 -group">.       
+3170: 20 20 20 20 20 20 20 20 20 3c 6c 61 62 65 6c 20          <label 
+3180: 66 6f 72 3d 22 6d 63 65 2d 45 4d 41 49 4c 22 3e for="mce-EMAIL">
+3190: 45 6d 61 69 6c 20 41 64 64 72 65 73 73 20 3c 2f Email Address </
+31a0: 6c 61 62 65 6c 3e 0a 20 20 20 20 20 20 20 20 20 label>.         
+31b0: 20 20 20 20 20 20 20 3c 69 6e 70 75 74 0a 20 20        <input.  
+31c0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+31d0: 74 79 70 65 3d 22 65 6d 61 69 6c 22 0a 20 20 20 type="email".   
+31e0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 76                v
+31f0: 61 6c 75 65 3d 22 22 0a 20 20 20 20 20 20 20 20 alue="".        
+3200: 20 20 20 20 20 20 20 20 20 20 6e 61 6d 65 3d 22           name="
+3210: 45 4d 41 49 4c 22 0a 20 20 20 20 20 20 20 20 20 EMAIL".         
+3220: 20 20 20 20 20 20 20 20 20 63 6c 61 73 73 3d 22          class="
+3230: 72 65 71 75 69 72 65 64 20 65 6d 61 69 6c 22 0a required email".
+3240: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+3250: 20 20 69 64 3d 22 6d 63 65 2d 45 4d 41 49 4c 22   id="mce-EMAIL"
+3260: 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 .               
+3270: 20 2f 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20  />.            
+3280: 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 20   </div>.       
+3290: 20 20 20 20 20 20 20 3c 64 69 76 20 69 64 3d 22        <div id="
+32a0: 6d 63 65 2d 72 65 73 70 6f 6e 73 65 73 22 20 63 mce-responses" c
+32b0: 6c 61 73 73 3d 22 63 6c 65 61 72 22 3e 0a 20 20 lass="clear">.  
+32c0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 64               <d
+32d0: 69 76 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 iv.             
+32e0: 20 20 20 20 20 63 6c 61 73 73 3d 22 72 65 73 70      class="resp
+32f0: 6f 6e 73 65 22 0a 20 20 20 20 20 20 20 20 20 20 onse".          
+3300: 20 20 20 20 20 20 20 20 69 64 3d 22 6d 63 65 2d         id="mce-
+3310: 65 72 72 6f 72 2d 72 65 73 70 6f 6e 73 65 22 0a error-response".
+3320: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+3330: 20 20 73 74 79 6c 65 3d 22 64 69 73 70 6c 61 79   style="display
+3340: 3a 6e 6f 6e 65 22 0a 20 20 20 20 20 20 20 20 20 :none".         
+3350: 20 20 20 20 20 20 20 3e 3c 2f 64 69 76 3e 0a 20        ></div>. 
+3360: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c                <
+3370: 64 69 76 0a 20 20 20 20 20 20 20 20 20 20 20 20 div.            
+3380: 20 20 20 20 20 20 63 6c 61 73 73 3d 22 72 65 73       class="res
+3390: 70 6f 6e 73 65 22 0a 20 20 20 20 20 20 20 20 20 ponse".         
+33a0: 20 20 20 20 20 20 20 20 20 69 64 3d 22 6d 63 65          id="mce
+33b0: 2d 73 75 63 63 65 73 73 2d 72 65 73 70 6f 6e 73 -success-respons
+33c0: 65 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 e".             
+33d0: 20 20 20 20 20 73 74 79 6c 65 3d 22 64 69 73 70      style="disp
+33e0: 6c 61 79 3a 6e 6f 6e 65 22 0a 20 20 20 20 20 20 lay:none".      
+33f0: 20 20 20 20 20 20 20 20 20 20 3e 3c 2f 64 69 76           ></div
+3400: 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 >.              
+3410: 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 20 20 20 </div>.         
+3420: 20 20 20 20 20 3c 21 2d 2d 20 72 65 61 6c 20 70      <!-- real p
+3430: 65 6f 70 6c 65 20 73 68 6f 75 6c 64 20 6e 6f 74 eople should not
+3440: 20 66 69 6c 6c 20 74 68 69 73 20 69 6e 20 61 6e  fill this in an
+3450: 64 20 65 78 70 65 63 74 20 67 6f 6f 64 20 74 68 d expect good th
+3460: 69 6e 67 73 20 2d 20 64 6f 20 6e 6f 74 20 72 65 ings - do not re
+3470: 6d 6f 76 65 20 74 68 69 73 20 6f 72 20 72 69 73 move this or ris
+3480: 6b 20 66 6f 72 6d 20 62 6f 74 20 73 69 67 6e 75 k form bot signu
+3490: 70 73 2d 2d 3e 0a 20 20 20 20 20 20 20 20 20 20 ps-->.          
+34a0: 20 20 20 20 3c 64 69 76 0a 20 20 20 20 20 20 20     <div.       
+34b0: 20 20 20 20 20 20 20 20 20 73 74 79 6c 65 3d 22          style="
+34c0: 70 6f 73 69 74 69 6f 6e 3a 20 61 62 73 6f 6c 75 position: absolu
+34d0: 74 65 3b 20 6c 65 66 74 3a 20 2d 35 30 30 30 70 te; left: -5000p
+34e0: 78 3b 22 0a 20 20 20 20 20 20 20 20 20 20 20 20 x;".            
+34f0: 20 20 20 20 61 72 69 61 2d 68 69 64 64 65 6e 3d     aria-hidden=
+3500: 22 74 72 75 65 22 0a 20 20 20 20 20 20 20 20 20 "true".         
+3510: 20 20 20 20 20 3e 0a 20 20 20 20 20 20 20 20 20      >.         
+3520: 20 20 20 20 20 20 20 3c 69 6e 70 75 74 0a 20 20        <input.  
+3530: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+3540: 74 79 70 65 3d 22 74 65 78 74 22 0a 20 20 20 20 type="text".    
+3550: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 6e 61               na
+3560: 6d 65 3d 22 62 5f 38 63 35 38 31 36 35 37 34 39 me="b_8c58165749
+3570: 33 31 38 35 34 35 61 38 39 63 64 31 62 32 31 5f 318545a89cd1b21_
+3580: 35 34 34 66 32 37 38 34 36 39 22 0a 20 20 20 20 544f278469".    
+3590: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 74 61               ta
+35a0: 62 69 6e 64 65 78 3d 22 2d 31 22 0a 20 20 20 20 bindex="-1".    
+35b0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 76 61               va
+35c0: 6c 75 65 3d 22 22 0a 20 20 20 20 20 20 20 20 20 lue="".         
+35d0: 20 20 20 20 20 20 20 2f 3e 0a 20 20 20 20 20 20        />.      
+35e0: 20 20 20 20 20 20 20 20 3c 2f 64 69 76 3e 0a 20         </div>. 
+35f0: 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 64 69              <di
+3600: 76 20 63 6c 61 73 73 3d 22 63 6c 65 61 72 22 3e v class="clear">
+3610: 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 .               
+3620: 20 3c 69 6e 70 75 74 0a 20 20 20 20 20 20 20 20  <input.        
+3630: 20 20 20 20 20 20 20 20 20 20 74 79 70 65 3d 22           type="
+3640: 73 75 62 6d 69 74 22 0a 20 20 20 20 20 20 20 20 submit".        
+3650: 20 20 20 20 20 20 20 20 20 20 76 61 6c 75 65 3d           value=
+3660: 22 53 75 62 73 63 72 69 62 65 22 0a 20 20 20 20 "Subscribe".    
+3670: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 6e 61               na
+3680: 6d 65 3d 22 73 75 62 73 63 72 69 62 65 22 0a 20 me="subscribe". 
+3690: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                 
+36a0: 20 69 64 3d 22 6d 63 2d 65 6d 62 65 64 64 65 64  id="mc-embedded
+36b0: 2d 73 75 62 73 63 72 69 62 65 22 0a 20 20 20 20 -subscribe".    
+36c0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 63 6c               cl
+36d0: 61 73 73 3d 22 62 75 74 74 6f 6e 22 0a 20 20 20 ass="button".   
+36e0: 20 20 20 20 20 20 20 20 20 20 20 20 20 2f 3e 0a              />.
+36f0: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f               </
+3700: 64 69 76 3e 0a 20 20 20 20 20 20 20 20 20 20 20 div>.           
+3710: 20 3c 2f 64 69 76 3e 0a 20 20 20 20 20 20 20 20  </div>.        
+3720: 20 20 3c 2f 66 6f 72 6d 3e 0a 20 20 20 20 20 20   </form>.      
+3730: 20 20 3c 2f 64 69 76 3e 0a 0a 20 20 20 20 20 20   </div>..      
+3740: 20 20 3c 21 2d 2d 45 6e 64 20 6d 63 5f 65 6d 62   <!--End mc_emb
+3750: 65 64 5f 73 69 67 6e 75 70 2d 2d 3e 0a 20 20 20 ed_signup-->.   
+3760: 20 20 20 3c 2f 64 69 76 3e 0a 20 20 20 20 3c 2f    </div>.    </
+3770: 73 65 63 74 69 6f 6e 3e 0a 20 20 3c 2f 64 69 76 section>.  </div
+3780: 3e 0a 3c 2f 64 69 76 3e 0a 0a 20 20 20 20 3c 2f >.</div>..    </
+3790: 64 69 76 3e 0a 20 20 20 20 3c 66 6f 6f 74 65 72 div>.    <footer
+37a0: 3e 0a 20 20 20 20 20 20 3c 64 69 76 20 63 6c 61 >.      <div cla
+37b0: 73 73 3d 22 77 72 61 70 22 3e 0a 20 20 20 20 20 ss="wrap">.     
+37c0: 20 20 20 3c 68 72 20 63 6c 61 73 73 3d 22 64 61    <hr class="da
+37d0: 72 6b 22 20 2f 3e 0a 20 20 20 20 20 20 20 20 3c rk" />.        <
+37e0: 70 20 63 6c 61 73 73 3d 22 74 2d 63 65 6e 74 65 p class="t-cente
+37f0: 72 22 3e 0a 20 20 20 20 20 20 20 20 20 20 4d 61 r">.          Ma
+3800: 64 65 20 66 6f 72 20 64 65 76 65 6c 6f 70 65 72 de for developer
+3810: 73 20 61 6e 64 20 64 65 73 69 67 6e 65 72 73 20 s and designers 
+3820: 62 79 0a 20 20 20 20 20 20 20 20 20 20 3c 61 20 by.          <a 
+3830: 68 72 65 66 3d 22 68 74 74 70 3a 2f 2f 62 65 6e href="http://ben
+3840: 68 6f 77 64 6c 65 2e 69 6d 22 3e 42 65 6e 20 48 howdle.im">Ben H
+3850: 6f 77 64 6c 65 3c 2f 61 3e 0a 20 20 20 20 20 20 owdle</a>.      
+3860: 20 20 3c 2f 70 3e 0a 20 20 20 20 20 20 3c 2f 64   </p>.      </d
+3870: 69 76 3e 0a 20 20 20 20 3c 2f 66 6f 6f 74 65 72 iv>.    </footer
+3880: 3e 0a 20 20 20 20 3c 73 63 72 69 70 74 20 64 61 >.    <script da
+3890: 74 61 2d 63 66 61 73 79 6e 63 3d 22 66 61 6c 73 ta-cfasync="fals
+38a0: 65 22 20 73 72 63 3d 22 2f 63 64 6e 2d 63 67 69 e" src="/cdn-cgi
+38b0: 2f 73 63 72 69 70 74 73 2f 35 63 35 64 64 37 32 /scripts/5c5dd72
+38c0: 38 2f 63 6c 6f 75 64 66 6c 61 72 65 2d 73 74 61 8/cloudflare-sta
+38d0: 74 69 63 2f 65 6d 61 69 6c 2d 64 65 63 6f 64 65 tic/email-decode
+38e0: 2e 6d 69 6e 2e 6a 73 22 3e 3c 2f 73 63 72 69 70 .min.js"></scrip
+38f0: 74 3e 3c 73 63 72 69 70 74 20 74 79 70 65 3d 22 t><script type="
+3900: 74 65 78 74 2f 6a 61 76 61 73 63 72 69 70 74 22 text/javascript"
+3910: 20 73 72 63 3d 22 68 74 74 70 73 3a 2f 2f 63 64  src="https://cd
+3920: 6e 6a 73 2e 63 6c 6f 75 64 66 6c 61 72 65 2e 63 njs.cloudflare.c
+3930: 6f 6d 2f 61 6a 61 78 2f 6c 69 62 73 2f 66 61 73 om/ajax/libs/fas
+3940: 74 63 6c 69 63 6b 2f 31 2e 30 2e 33 2f 66 61 73 tclick/1.0.3/fas
+3950: 74 63 6c 69 63 6b 2e 6d 69 6e 2e 6a 73 22 3e 3c tclick.min.js"><
+3960: 2f 73 63 72 69 70 74 3e 0a 20 20 20 20 3c 73 63 /script>.    <sc
+3970: 72 69 70 74 20 73 72 63 3d 22 2f 6a 73 2f 61 70 ript src="/js/ap
+3980: 70 2e 6a 73 22 3e 3c 2f 73 63 72 69 70 74 3e 0a p.js"></script>.
+3990: 20 20 20 20 3c 21 2d 2d 20 47 6c 6f 62 61 6c 20     <!-- Global 
+39a0: 73 69 74 65 20 74 61 67 20 28 67 74 61 67 2e 6a site tag (gtag.j
+39b0: 73 29 20 2d 20 47 6f 6f 67 6c 65 20 41 6e 61 6c s) - Google Anal
+39c0: 79 74 69 63 73 20 2d 2d 3e 0a 20 20 20 20 3c 73 ytics -->.    <s
+39d0: 63 72 69 70 74 20 61 73 79 6e 63 20 73 72 63 3d cript async src=
+39e0: 22 68 74 74 70 73 3a 2f 2f 77 77 77 2e 67 6f 6f "https://www.goo
+39f0: 67 6c 65 74 61 67 6d 61 6e 61 67 65 72 2e 63 6f gletagmanager.co
+3a00: 6d 2f 67 74 61 67 2f 6a 73 3f 69 64 3d 55 41 2d m/gtag/js?id=UA-
+3a10: 31 37 34 30 30 38 31 30 37 2d 31 22 3e 0a 20 20 174008107-1">.  
+3a20: 20 20 3c 2f 73 63 72 69 70 74 3e 0a 20 20 20 20   </script>.    
+3a30: 3c 73 63 72 69 70 74 3e 0a 20 20 20 20 20 20 77 <script>.      w
+3a40: 69 6e 64 6f 77 2e 64 61 74 61 4c 61 79 65 72 20 indow.dataLayer 
+3a50: 3d 20 77 69 6e 64 6f 77 2e 64 61 74 61 4c 61 79 = window.dataLay
+3a60: 65 72 20 7c 7c 20 5b 5d 3b 0a 20 20 20 20 20 20 er || [];.      
+3a70: 66 75 6e 63 74 69 6f 6e 20 67 74 61 67 28 29 7b function gtag(){
+3a80: 64 61 74 61 4c 61 79 65 72 2e 70 75 73 68 28 61 dataLayer.push(a
+3a90: 72 67 75 6d 65 6e 74 73 29 3b 7d 0a 20 20 20 20 rguments);}.    
+3aa0: 20 20 67 74 61 67 28 27 6a 73 27 2c 20 6e 65 77   gtag('js', new
+3ab0: 20 44 61 74 65 28 29 29 3b 0a 0a 20 20 20 20 20  Date());..     
+3ac0: 20 67 74 61 67 28 27 63 6f 6e 66 69 67 27 2c 20  gtag('config', 
+3ad0: 27 55 41 2d 31 37 34 30 30 38 31 30 37 2d 31 27 'UA-174008107-1'
+3ae0: 29 3b 0a 20 20 20 20 3c 2f 73 63 72 69 70 74 3e );.    </script>
+3af0: 0a 20 20 20 20 3c 73 63 72 69 70 74 3e 0a 20 20 .    <script>.  
+3b00: 20 20 20 20 28 66 75 6e 63 74 69 6f 6e 28 69 2c     (function(i,
+3b10: 20 73 2c 20 6f 2c 20 67 2c 20 72 2c 20 61 2c 20  s, o, g, r, a, 
+3b20: 6d 29 20 7b 0a 20 20 20 20 20 20 20 20 69 5b 22 m) {.        i["
+3b30: 47 6f 6f 67 6c 65 41 6e 61 6c 79 74 69 63 73 4f GoogleAnalyticsO
+3b40: 62 6a 65 63 74 22 5d 20 3d 20 72 3b 0a 20 20 20 bject"] = r;.   
+3b50: 20 20 20 20 20 28 69 5b 72 5d 20 3d 0a 20 20 20      (i[r] =.   
+3b60: 20 20 20 20 20 20 20 69 5b 72 5d 20 7c 7c 0a 20        i[r] ||. 
+3b70: 20 20 20 20 20 20 20 20 20 66 75 6e 63 74 69 6f          functio
+3b80: 6e 28 29 20 7b 0a 20 20 20 20 20 20 20 20 20 20 n() {.          
+3b90: 20 20 28 69 5b 72 5d 2e 71 20 3d 20 69 5b 72 5d   (i[r].q = i[r]
+3ba0: 2e 71 20 7c 7c 20 5b 5d 29 2e 70 75 73 68 28 61 .q || []).push(a
+3bb0: 72 67 75 6d 65 6e 74 73 29 3b 0a 20 20 20 20 20 rguments);.     
+3bc0: 20 20 20 20 20 7d 29 2c 0a 20 20 20 20 20 20 20      }),.       
+3bd0: 20 20 20 28 69 5b 72 5d 2e 6c 20 3d 20 31 20 2a    (i[r].l = 1 *
+3be0: 20 6e 65 77 20 44 61 74 65 28 29 29 3b 0a 20 20  new Date());.  
+3bf0: 20 20 20 20 20 20 28 61 20 3d 20 73 2e 63 72 65       (a = s.cre
+3c00: 61 74 65 45 6c 65 6d 65 6e 74 28 6f 29 29 2c 20 ateElement(o)), 
+3c10: 28 6d 20 3d 20 73 2e 67 65 74 45 6c 65 6d 65 6e (m = s.getElemen
+3c20: 74 73 42 79 54 61 67 4e 61 6d 65 28 6f 29 5b 30 tsByTagName(o)[0
+3c30: 5d 29 3b 0a 20 20 20 20 20 20 20 20 61 2e 61 73 ]);.        a.as
+3c40: 79 6e 63 20 3d 20 31 3b 0a 20 20 20 20 20 20 20 ync = 1;.       
+3c50: 20 61 2e 73 72 63 20 3d 20 67 3b 0a 20 20 20 20  a.src = g;.    
+3c60: 20 20 20 20 6d 2e 70 61 72 65 6e 74 4e 6f 64 65     m.parentNode
+3c70: 2e 69 6e 73 65 72 74 42 65 66 6f 72 65 28 61 2c .insertBefore(a,
+3c80: 20 6d 29 3b 0a 20 20 20 20 20 20 7d 29 28 0a 20  m);.      })(. 
+3c90: 20 20 20 20 20 20 20 77 69 6e 64 6f 77 2c 0a 20        window,. 
+3ca0: 20 20 20 20 20 20 20 64 6f 63 75 6d 65 6e 74 2c        document,
+3cb0: 0a 20 20 20 20 20 20 20 20 22 73 63 72 69 70 74 .        "script
+3cc0: 22 2c 0a 20 20 20 20 20 20 20 20 22 2f 2f 77 77 ",.        "//ww
+3cd0: 77 2e 67 6f 6f 67 6c 65 2d 61 6e 61 6c 79 74 69 w.google-analyti
+3ce0: 63 73 2e 63 6f 6d 2f 61 6e 61 6c 79 74 69 63 73 cs.com/analytics
+3cf0: 2e 6a 73 22 2c 0a 20 20 20 20 20 20 20 20 22 67 .js",.        "g
+3d00: 61 22 0a 20 20 20 20 20 20 29 3b 0a 0a 20 20 20 a".      );..   
+3d10: 20 20 20 67 61 28 22 63 72 65 61 74 65 22 2c 20    ga("create", 
+3d20: 22 55 41 2d 35 35 38 38 38 38 37 37 2d 31 22 2c "UA-55888877-1",
+3d30: 20 22 61 75 74 6f 22 29 3b 0a 20 20 20 20 20 20  "auto");.      
+3d40: 67 61 28 22 73 65 6e 64 22 2c 20 22 70 61 67 65 ga("send", "page
+3d50: 76 69 65 77 22 29 3b 0a 20 20 20 20 3c 2f 73 63 view");.    </sc
+3d60: 72 69 70 74 3e 0a 20 20 3c 2f 62 6f 64 79 3e 0a ript>.  </body>.
+3d70: 3c 2f 68 74 6d 6c 3e 0a 0d 0a 30 0d 0a 0d 0a    </html>...0....
+== Info: Connection #0 to host reqres.in left intact
